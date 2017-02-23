@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math.random()</title>
+</head>
+
+<body>
+    <script>
+    var res = getArrOfRandom();
+    document.write(res.join() + '<br />');
+    document.write("该组数的最大值是： " + res[0] + "最小值是： " + res[res.length - 1]);
+    console.log(Math.max.apply(null, res));
+
+    function getArrOfRandom() {
+        var arr = [];
+        for (var i = 0; i < 10; i++) {
+            arr[i] = getRandom(0, 100);
+        }
+        arr.sort(function(a, b) {
+            return b - a;
+        })
+        return arr;
+    }
+
+    function getRandom(n, m) {
+        return Math.floor(Math.random() * (m - n + 1) + n);
+    }
+    </script>
+</body>
+
+</html>

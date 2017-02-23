@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>location方法</title>
+</head>
+
+<body>
+    <input type="button" value="操作页面" id="ck">
+    <script type="text/javascript">
+    var btn = document.getElementById("ck");
+    btn.onclick = function() {
+        var result = confirm("刷新页面吗？");
+        if (result) {
+            location.reload(true);
+        } else {
+            location.replace("http://www.imooc.com");
+        }
+    }
+    console.log(history);
+    </script>
+</body>
+
+</html>

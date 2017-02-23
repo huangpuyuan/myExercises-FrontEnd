@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>string</title>
+</head>
+
+<body>
+    <h2>
+	<p>索引:indexOf lastIndexOf</p>字符串的截取：slice,substring,substr</h2>
+    <script>
+    var str = "hello world";
+    console.log(str.slice(1, 3));
+    console.log(str.slice(-7, -3));
+    //substring 当参数为负数的时候自动转化成0
+    console.log(str.substring(-1, 5));
+    //substr 第二个参数为字符串的长度
+    console.log(str.substr(6, 3));
+    console.log(str.substr(-5, 4));
+    </script>
+    <h2>获取扩展名：url="index.html"</h2>
+    <script>
+    var url = "index.html";
+    var url2 = "http://baidu.com/index.txt";
+    var url3 = "abc.jpg";
+    //获取.在url中出现的位置
+    function getFileFormat(url) {
+        var pos = url.lastIndexOf(".");
+        return url.slice(pos + 1);
+    }
+
+    var formatName = getFileFormat(url);
+    var picFormat = getFileFormat(url3);
+    document.write(formatName + '<br />');
+    document.write(picFormat);
+    </script>
+    <h2>字符串分割spilt:</h2>
+    <script>
+    var str = "welcome-to-beijing";
+    var arr = str.split("-");
+    var date = '2016/05/05';
+    var dateArr = date.split("/");
+    console.log(arr);
+    console.log(dateArr);
+    var tel="010-62971268,400-100-9098,010-86789889";
+    var newTel=tel.replace(","," ");
+    document.write(newTel+"//只替换了第一个逗号");
+    </script>
+</body>
+
+</html>

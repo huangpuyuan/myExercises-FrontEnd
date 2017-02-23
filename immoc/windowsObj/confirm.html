@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输入框</title>
+</head>
+
+<body>
+    <input id="ipt" type="button" value="删除">
+    <script type="text/javascript">
+    var input = document.getElementById("ipt");
+    input.onclick = function() {
+        var reslut = confirm("你确定要删除吗？")
+        if (reslut) {
+            input.style.color = "#f00";
+        }else{
+        	input.style.color = "seagreen";
+        }
+    }
+    </script>
+</body>
+
+</html>

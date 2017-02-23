@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index11</title>
+
+</head>
+<body>
+	<p>这是index11.html</p>
+	<p><a href="index12.html">index12</a></p>
+	<p><input type="button" value="后退" id="btn"></p>
+	<p><input type="button" value="前进" id="btn2"></p>
+	<script>
+		var btn=document.getElementById("btn");
+		btn.onclick=function(){
+			//history.back();
+			history.go(-1);
+		}
+		var btn2=document.getElementById("btn2");
+
+		btn2.onclick=function(){
+			//history.forward();
+			history.go(1);
+		}
+	</script>
+</body>
+</html>

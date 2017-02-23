@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>random</title>
+</head>
+
+<body>
+    <h3>生成2到6之间的随机整数:</h3>
+    <button id="btn">提交</button>
+    <p></p>
+    <p></p>
+    <script>
+    document.getElementById('btn').onclick = function() {
+        getRandomNumber();
+    };
+
+    function getRandomNumber() {
+       
+        var element = document.getElementsByTagName("p");        
+        element[0].innerHTML = getRandom(2,6);
+    }
+
+    function getRandom(n,m){
+    	var choise=m-n+1;
+    	return Math.floor(Math.random() * choise + n);
+    }
+    </script>
+</body>
+
+</html>

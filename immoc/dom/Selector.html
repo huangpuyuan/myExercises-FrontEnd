@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+
+<body>
+    <div id="box" class="box">元素</div>
+    <ul id="list1">
+        <li>前端</li>
+        <li>后台</li>
+        <li>UI设计</li>
+    </ul>
+    <ol id="list2">
+        <li>Js原生</li>
+        <li>Js框架</li>
+    </ol>
+    <p></p>
+    <script>
+    var box = document.getElementById('box');
+    console.log(box.className="current");
+
+    box.style.color = "#f00";
+    box.style.fontWeight = "bold";
+    var lis = document.getElementsByTagName('li');
+
+    //id为list1
+    var lis1 = document.getElementById("list1").getElementsByTagName("li");
+    for (var i = 0, len = lis1.length; i < len; i++) {
+        lis1[i].style.color = '#00f';
+    }
+    var lis2 = document.getElementById("list2").getElementsByTagName("li");
+    for (var j = 0, len2 = lis2.length; j < len2; j++) {
+        console.log(lis2[j].innerHTML += '程序');
+    }
+
+    </script>
+</body>
+
+</html>

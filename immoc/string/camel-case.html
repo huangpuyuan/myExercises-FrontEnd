@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>toUpperCase</title>
+</head>
+
+<body>
+    <script>
+    function camelback(str) {
+        var arr = str.split("-");
+        console.log(arr);
+        var newStr=arr[0];
+        for (var i = 1, len = arr.length; i < len; i++) {
+            var word = arr[i];
+            //将首字符转化为大写
+            newStr += word.charAt(0).toUpperCase()+word.slice(1);
+        }
+        console.log(newStr);
+    }
+
+    var camelFormt = camelback("border-left-color");
+    var camelFormt1 = camelback("get-element-by-id");
+    </script>
+</body>
+
+</html>

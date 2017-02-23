@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Attr</title>
+</head>
+<p id="text" align="center" data-type="title">文本</p>
+<input type="text" id="user" name="user" value="user">
+<body>
+	<script>
+		var p=document.getElementById("text");
+		var user=document.getElementById("user");
+		console.log(p.getAttribute("data-type"));
+		p.setAttribute("data-color","red");
+		console.log(p.getAttribute("data-color"));
+		p.removeAttribute("align");
+	</script>
+</body>
+</html>

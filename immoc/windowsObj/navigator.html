@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigator</title>
+</head>
+
+<body>
+    <input type="button" value="点击获取浏览器信息" id="browser">
+    <script>
+    function getBrowser() {
+        var explorer = navigator.userAgent.toLowerCase();
+        var browser;
+
+        if (explorer.indexOf("msie") > -1) {
+            browser = "IE";
+        } else if (explorer.indexOf("chrome") > -1) {
+            browser = "chrome";
+        } else if (explorer.indexOf("opera") > -1) {
+            browser = "opera"
+        } else if (explorer.indexOf("safari") > -1) {
+            browser = "safari";
+        } else if (explorer.indexOf("firefox") > -1) {
+            browser = "firefox";
+        }
+        return browser;
+    }
+
+    var btn = document.getElementById("browser");
+    btn.onclick = function() {
+        var explorer = getBrowser();
+
+        alert("您当前使用的浏览器是" + explorer + "浏览器");
+    }
+    </script>
+</body>
+
+</html>

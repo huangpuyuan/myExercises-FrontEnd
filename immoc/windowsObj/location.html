@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+.box1 {
+    height: 400px;
+    background: #ccc;
+}
+
+.box2 {
+    height: 600px;
+    background: #666;
+}
+</style>
+
+<body>
+    <div class="box1" id="top"></div>
+    <div class="box2"></div>
+    <input type="button" id="btn" value="返回顶部">
+    <button id="reload">刷新</button>
+    <script>
+    var btn = document.getElementById("btn");
+    btn.onclick = function() {
+        location.hash = "#top";
+    }
+    console.log(location.href);
+    console.log(location.hash);
+    console.log(location.host);
+    console.log(location.pathname);
+    console.log(location.port);
+    console.log(location);
+    console.log(location.protocol);
+    console.log(location.search);
+    // setTimeout(function() {
+    //     location.replace("location2.html");
+    // }, 2000)
+
+    //location.relaod重载页面。
+    	document.getElementById("reload").onclick =function(){
+    		location.reload(true);
+    	}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+
+<body>
+    <header style="letter-spacing: 2px;">Array</header>
+    <h2>Join:</h2>
+    <script>
+    var nums = [2, 4, 5];
+    var str = nums.join("-");
+    console.log(str);
+    var words = ["border", "left", "color"];
+    var wordstr = words.join("-");
+    document.write(words + "<br>");
+    document.write(wordstr);
+    // var arr=["HTML","CSS","JavaScript","HTML5","CSS3"];
+    // for (var i = 0; i < arr.length; i++) {
+    // 	document.write('<p style="font-weight:300;">'+arr[i]+'</p>');
+    // }
+    </script>
+    <h2>Reverse:</h2>
+    <script>
+    var nums = [2, 4, 5];
+    document.write(nums + "<br>");
+    nums.reverse();
+    document.write(nums + "<br>");
+    document.write([1, 2, 3, 4, 5, 6, 7, 8] + "<br>");
+
+    function arrReverse(arr) {
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            newArr.unshift(arr[i]);
+        }
+        return newArr;
+    }
+    document.write("利用unshift实现反转：" + arrReverse([1, 2, 3, 4, 5, 6, 7, 8]));
+    </script>
+    <h2>Sort:</h2>
+    <script>
+    var nums = [31, 4, 5, 27, 17, 3, 1, 88];
+    document.write("原数列：" + nums + "<br>" + "字符串排列：");
+    nums.sort(); //字符串排列;
+    document.write(nums + "<br>" + "降序排列：");
+    nums.sort(function(a, b) {
+        return a < b;
+    });
+    document.write(nums + "<br>" + "升序排列：");
+    nums.sort(function(a, b) {
+        return a > b;
+    });
+    document.write(nums);
+    </script>
+    <h2>Concat:</h2>
+    <script>
+    var arr1 = ["a", "b", "c"];
+    var arr2 = ["c", "d", "e", 1, 2];
+    newarr = arr1.concat(arr2);
+    document.write(newarr);
+    </script>
+    <h2>Slice:(面试题)</h2>
+    <p>//完成以下代码段，实现b数组对a数组的拷贝，实现有多种方法 理解浅拷贝和深拷贝
+    </p>
+    <p>
+        var a=[1,"yes",3], b;
+    </p>
+    <p>1.遍历</p>
+    <script>
+    // var arr3 = ["red", "orange", "green", "yellow","black"];
+    // var newArr3 = arr3.slice(2,4);
+    // document.write(newArr3+'<br>');
+    // var newArr3 = arr3.slice(-1,5);
+    // document.write(newArr3);
+    var a = [1, "yes", 3],
+        b;
+
+    b = [];
+    for (var i = 0; i < a.length; i++) {
+        b.push(a[i]);
+    }
+    //document.write(b);
+    </script>
+    <p>2.concat</p>
+    <script>
+    var b0 = [].concat(a);
+    console.log(b0);
+    </script>
+    <p>3.slice</p>
+    <script>
+    var b1 = a.slice(0);
+    console.log(b1);
+    </script>
+    <h2>Splice: <span style="font-weight: 400;font-size:15px; ">删除，插入与替换</span></h2>
+    <script>
+    </script>
+</body>
+
+</html>

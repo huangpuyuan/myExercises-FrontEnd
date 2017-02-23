@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>setTimeOut</title>
+</head>
+
+<body>
+    <script>
+    // var IntervalId = setInterval(function() {
+    //     console.log("你好");
+    // }, 1000);
+
+    // setTimeout(function() {
+    // 	clearInterval(IntervalId);
+    // }, 10000)
+
+     var num = 1,
+         max = 10,
+         timer = null;
+
+    // timer = setInterval(function() {
+    //     console.log(num);
+    //     num++;
+    //     if (num > max) {
+    //         clearInterval(timer);
+    //     }
+    // }, 1000);
+
+    function inCreamentNum() {
+        console.log(num);
+        num++;
+        if (num <= max) {
+            setTimeout(inCreamentNum, 1000);
+        } else {
+            clearTimeout(timer);
+        }
+    }
+
+    timer = setTimeout(inCreamentNum, 1000);
+    </script>
+</body>
+
+</html>

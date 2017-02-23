@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+
+<body>
+    <script>
+    var today = new Date();
+    var year = today.getFullYear(),
+        month = today.getMonth() + 1,
+        date = today.getDate(),
+        week = today.getDay(),
+        hours = today.getHours(),
+        minutes = today.getMinutes(),
+        seconds = today.getSeconds(),
+        weeks=['日','一','二','三','四','五','六'],
+        tims =today.getTime(),
+        time = year + '年' + month + '月' + date + '日' + hours + '时' + minutes + '分' + seconds + '秒 星期'+weeks[week];
+    console.log("现在是" + time);
+    console.log(tims);
+
+    //设置50天之后的时间
+        var temp=new Date(year,month,date+50);
+    console.log("50天后的今天是： "+temp);
+    </script>
+</body>
+
+</html>

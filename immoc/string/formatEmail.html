@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>formatEmail</title>
+</head>
+
+<body>
+    <script>
+    var emailurl = prompt("请输出邮箱地址");
+
+    function getemailFormatUrl(url) {
+        var pos = url.lastIndexOf("@");
+        return url.slice(pos + 1);
+    }
+
+    function getEmailFormatInfo(url) {
+        var pos = url.lastIndexOf("@");
+        return url.slice(0,pos);
+    }
+    document.write("邮箱的用户名是： "+getemailFormatUrl(emailurl)+"<br />登入的邮箱域名是："+getEmailFormatInfo(emailurl));
+    </script>
+</body>
+
+</html>
