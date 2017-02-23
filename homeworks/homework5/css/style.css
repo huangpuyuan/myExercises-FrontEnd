@@ -1,0 +1,17 @@
+/* All Tag  */
+* { padding: 0; margin: 0; border: none;}
+a:link,a:visited { text-decoration: none;}
+body { font-family: "Microsoft YaHei";}
+.main { width: 1200px; margin: 40px auto; overflow: hidden;}
+/*nav*/
+nav { width: 1200px; height: 40px; background-color: #fff; text-align: center; overflow: hidden;}
+nav > a { display: block; float: left; width: 300px; height: 40px; font-size: 20px; color: #666; line-height: 40px; border-radius: 4px 4px 2px 2px;}
+.current { background-color: #ffcc00; box-shadow: 0 0 0 1px rgba(7, 17, 27, .1) inset; font-weight: bold;}
+/* banner */
+.banner { width: 1200px; height: 460px; overflow: hidden;}
+.banner-slide { width: 1200px; height: 460px; display: none; background-repeat: no-repeat;}
+.active { display: block;}
+.slide1 { background: url(../img/1.jpg);}
+.slide2 { background: url(../img/2.jpg);}
+.slide3 { background: url(../img/3.jpg);}
+.slide4 { background: url(../img/4.jpg);}
