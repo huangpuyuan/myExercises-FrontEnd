@@ -1,6 +1,9 @@
-# 
+# 我的前端学习之旅
+## I like coding.
 
 第一部分： css3-plotting
+			
+			css作图
 
 第二部分： homework in IMOOC
 		   homework1 :https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework1
