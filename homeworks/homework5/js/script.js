@@ -6,7 +6,6 @@ var index = 0,
     dots = byId("dots").getElementsByTagName("a"),
     len = pics.length
     ;
-
 //封装byId
 function byId(id) {
     return typeof(id) === "string" ? document.getElementById(id) : id;

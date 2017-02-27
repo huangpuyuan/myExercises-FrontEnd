@@ -24,7 +24,7 @@ header > .container > nav > a.active {color: #f46208;}
 .portfolio > p {font-weight: 500;display: block;width: 700px;margin: 20px auto;padding: 20px 0;color: #000;}
 .portfolio > nav {width: 700px;margin: 20px auto;padding: 10px 0;}
 .portfolio > nav > a {line-height: 25px;display: inline-block;margin-bottom: 18px;margin-left: 5px;padding: 0 10px;color: #f46208;border: 1px solid #f46208;}
-.portfolio > nav > a:hover {background-color: red;}
+.portfolio > nav > a:hover {background-color: red; color:#fff;}
 .portfolio .nav-img {width: 100%;height: 380px;}
 
 /* stats */
