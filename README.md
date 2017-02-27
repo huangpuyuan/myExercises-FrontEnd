@@ -1,6 +1,9 @@
-# 
+# 我的前端学习之旅
+## I like coding.
 
 第一部分： css3-plotting
+			
+			css作图
 
 第二部分： homework in IMOOC
 		   homework1 :https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework1
@@ -25,8 +28,9 @@
  			1.从大到小
 
  			2.BEM开发模式(命名规则):
- 				块(Block)、元素(Element)、修饰符(Modifier)
- 			参考网页 http://www.w3cplus.com/css/bem-definitions.html
+ 				块(Block)、元素(Element)、修饰符(Modifier)。
+参考网页：
+http://www.w3cplus.com/css/bem-definitions.html
 
 
 
