@@ -5,18 +5,24 @@
 * 文字垂直居中 
 
 ```css
-	.header_nav-item{ height:38px;line-height:38px; }
+.header_nav-item{ height:38px;line-height:38px; }
 ```
 * 块级元素垂直居中于父元素
 
 ```css
+<<<<<<< HEAD
 	.header_wrap{ position:relative;height:80px; }
 	.header_logo{ position:absolute;top:50%;margin-top:-19;	}
 ```
+=======
+.header_wrap{ position:relative;height:80px; }
+.header_logo{ position:absolute;top:50%;margin-top:-19;	}
+```	
+>>>>>>> 205eae5eaa86396211186573576382fb5b95c8ad
 * 块元素(容器) 水平居中
 
 ```css
-	.header_wrap{ margin:0 auto; }
+.header_wrap{ margin:0 auto; }
 ```
 >第一屏样式总结  
 

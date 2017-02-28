@@ -1,8 +1,7 @@
 # 我的前端学习之旅  
 >### I like coding.
 
-* 第一部分： css3-plotting	css作图
-
+* 第一部分： css3-plotting
 * 第二部分： homework in IMOOC
 	* homework1 :https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework1
  	* homework2 :https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework2/蓝天白云.html 
@@ -26,6 +25,5 @@
 		* 修饰(某元素和、或某模块特别的状态，必须要有一个状态名和状态值)
 * 参考网页：
 http://www.w3cplus.com/css/bem-definitions.html
-
 
 ![image](https://github.com/huangpuyuan/myExercises-FrontEnd/blob/master/pictureOfMind/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.png)
