@@ -27,12 +27,6 @@
         border-right: 100px solid transparent;
         border-bottom: 70px solid yellow;
         border-left: 100px solid transparent;
-        -webkit-transform: rotate(35deg) scale(0.5);
-           -moz-transform: rotate(35deg) scale(0.5);
-            -ms-transform: rotate(35deg) scale(0.5);
-             -o-transform: rotate(35deg) scale(0.5);
-                transform: rotate(35deg) scale(0.5);
-
     }
     
     .star::before {
@@ -54,7 +48,6 @@
     
     .star::after {
         position: absolute;
-        display: block;
         top: 3px;
         left: -105px;
         width: 0px;
@@ -67,10 +60,15 @@
            -moz-transform: rotate(-70deg);
             -ms-transform: rotate(-70deg);
              -o-transform: rotate(-70deg);
-                transform: rotate(-70deg);
-        
+                transform: rotate(-70deg);        
     }
-	
+	.star1{
+        -webkit-transform: rotate(35deg) scale(0.5);
+           -moz-transform: rotate(35deg) scale(0.5);
+            -ms-transform: rotate(35deg) scale(0.5);
+             -o-transform: rotate(35deg) scale(0.5);
+                transform: rotate(35deg) scale(0.5);
+    }
 	.star2 {       
         -webkit-transform: translate(81px,-55px) rotate(50deg) scale(0.15);
            -moz-transform: translate(81px,-55px) rotate(50deg) scale(0.15);
@@ -110,7 +108,7 @@
 
 <body>
     <div class=main> 
-        <div class="star"></div>
+        <div class="star star1"></div>
         <div class="star star2"></div>
         <div class="star star3"></div>
         <div class="star star4"></div>
