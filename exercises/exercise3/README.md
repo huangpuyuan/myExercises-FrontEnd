@@ -10,15 +10,10 @@
 * 块级元素垂直居中于父元素
 
 ```css
-<<<<<<< HEAD
-	.header_wrap{ position:relative;height:80px; }
-	.header_logo{ position:absolute;top:50%;margin-top:-19;	}
-```
-=======
 .header_wrap{ position:relative;height:80px; }
 .header_logo{ position:absolute;top:50%;margin-top:-19;	}
-```	
->>>>>>> 205eae5eaa86396211186573576382fb5b95c8ad
+```
+
 * 块元素(容器) 水平居中
 
 ```css
@@ -33,5 +28,5 @@
 * 背景图覆盖模式
 
 ```css
-	background-size:cover;
+background-size:cover;
 ```
