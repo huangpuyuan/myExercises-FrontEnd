@@ -82,12 +82,12 @@ const band =[
 
 ```javascript
 let bandoodle = [];
-for (let item of input) {
+for (let item of band) {
 	let newItem = oodlify(item);
 	bandoodle.push(newItem);
 }
 let floodleship = [];
-for (let item of input) {
+for (let item of fellowship) {
 	let newItem = oodlify(item);
 	floodleship.push(newItem);
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>let</title>
+</head>
+
+<body>
+    <ul id="list"></ul>
+    <script>
+    var list = document.getElementById("list");
+
+    for (let i = 1; i <= 5; i++) {
+        var item = document.createElement("LI");
+        item.appendChild(document.createTextNode("Item " + i));
+
+        let j = i;
+        item.onclick = function(ev) {
+            console.log(ev);
+            console.log("Item " + j + " is clicked.");
+        };
+
+        list.appendChild(item);
+    }
+
+    var x = 'global';
+    let y = 'global';
+    console.log(this.x); // "global",window对象
+    console.log(this.y); // undefined
+    </script>
+</body>
+
+</html>
