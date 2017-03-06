@@ -81,7 +81,7 @@ BEM 设计模式
 
 /* 第一屏 */
 
-.screen-1{
+.screen-1 {
     position: relative;
     overflow: hidden;
     height: 800px;
@@ -130,42 +130,315 @@ BEM 设计模式
 
 /*第二屏*/
 
-.screen-2{
+.screen-2 {
     height: 800px;
+    text-align: center;
     background-color: #fafafa;
+}
+
+.screen-2__wrap {
+    position: relative;
+    overflow: hidden;
+    min-width: 800px;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.screen-2__heading {
+    font-size: 42px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: #f01414;
+}
+
+.screen-2__subheading {
+    font-size: 16px;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+}
+
+.screen-2__phone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    width: 800px;
+    height: 873px;
+    margin-left: -464px;
+    background: url(../img/bg-screen-2.png) no-repeat;
+}
+
+.screen-2__point {
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    width: 100px;
+    height: 24px;
+    color: #4d555d;
+}
+
+.screen-2__point_i_1 {
+    top: 180px;
+    left: -120px;
+    padding-right: 112px;
+    background: url(../img/icon-point-right.png) no-repeat center right;
+}
+
+.screen-2__point_i_2 {
+    top: 37px;
+    left: 584px;
+    padding-left: 112px;
+    background: url(../img/icon-point-left.png) no-repeat center left;
+}
+
+.screen-2__point_i_3 {
+    top: 340px;
+    left: 680px;
+    padding-left: 112px;
+    background: url(../img/icon-point-left.png) no-repeat center left;
+}
+
+
+/*第三屏*/
+
+.screen-3 {
+    height: 800px;
+    color: rgb(255, 255, 255);
+    background-color: #a71316;
+}
+
+.screen-3__wrap {
+    position: relative;
+    overflow: hidden;
+    min-width: 800px;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.screen-3__heading {
+    font-size: 36px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 580px;
+}
+
+.screen-3__subheading {
+    font-size: 16px;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    width: 580px;
+}
+
+.screen-3__phone {
+    position: absolute;
+    top: 200px;
+    left: 465px;
+    width: 729px;
+    height: 900px;
+    background: url(../img/bg-screen-3.png) no-repeat;
+}
+
+.screen-3__features {
+    position: absolute;
+    bottom: 140px;
+    left: 5px;
+    width: 328px;
+    height: 288px;
+}
+
+.screen-3__features-item-number {
+    font-size: 36px;
+    line-height: 36px;
+    display: block;
+    height: 36px;
+    padding: 32px 0 9px 0;
+}
+
+.screen-3__features-item {
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
+    width: 138px;
+    height: 118px;
+    margin: 0 24px 24px 0;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #d97173;
+    border-radius: 3px;
+}
+
+
+/* 第四屏开始 */
+
+.screen-4 {
+    height: 800px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.screen-4__wrap {
+    position: relative;
+    overflow: hidden;
+    min-width: 800px;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.screen-4__heading {
+    font-size: 42px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: #f01414;
+}
+
+.screen-4__subheading {
+    font-size: 16px;
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+
+.screen-4__type {
+    font-size: 16px;
+    position: absolute;
+    bottom: 220px;
+    width: 1300px;
+    height: 270px;
+    margin-left: 30px;
     text-align: center;
 }
 
-.screen-2__wrap{
+.screen-4__type-item {
     position: relative;
+    float: left;
+    width: 220px;
+    height: 270px;
+    margin-right: 90px;
+}
+
+.screen-4__type-item-name {
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 40px;
+    height: 16px;
+    color: #2c3238;
+}
+
+.screen-4__type-item-storage {
+    font-size: 9px;
+    line-height: 9px;
+    position: absolute;
+    top: 328px;
+    width: 100%;
+    height: 40px;
+    height: 9px;
+    color: #93999f;
+}
+
+.screen-4__type .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 270px;
+}
+
+.screen-4__type-item_i_1 {
+    background: url('../img/phone-1.png') center left no-repeat;
+}
+
+.screen-4__type-item_i_2 {
+    background: url('../img/phone-2.png') center left no-repeat;
+}
+
+.screen-4__type-item_i_3 {
+    background: url('../img/phone-3.png') center left no-repeat;
+}
+
+.screen-4__type-item_i_4 {
+    background: url('../img/phone-4.png') center left no-repeat;
+}
+/* 第五屏开始 */
+.screen-5 {
+    height: 800px;
+    text-align: center;
+    overflow: hidden;
+    background: #d9dde1;
+    position: relative; 
+}
+.screen-5__back{
+    width: 100%;
+    height: 370px;
+    background: url(../img/bg-screen-5.png) no-repeat bottom center ;
+    background-size: cover;
+    position: absolute;
+    bottom: -100px;
+}
+
+.screen-5__wrap {
     max-width: 1200px;
-    min-width: 800px;    
+    min-width: 800px;
     margin: 0px auto;
     height: 100%;
+    position: relative;
     overflow: hidden;
 }
-.screen-2__heading {
+
+.screen-5__heading {
     position: absolute;
-    top: 80px;
+    top: 180px;
     width: 100%;
     font-size: 42px;
     color: #f01414;
 }
-.screen-2__subheading {
-    width: 100%;
-    top: 190px;
+.screen-5__subheading {
     position: absolute;
+    top: 270px;
+    width: 100%;
     font-size: 16px;
 }
 
-.screen-2__phone {
-   width: 800px;
-    height: 873px;
-    background: url(../img/bg-screen-2.png) no-repeat;
-    position: absolute;
-    left: 50%;
-    margin-left: -464px;
-    top: 270px;
+
+.buy {
+    height: 80px;
+    padding: 120px 0px;
+    background: url(../img/bg-screen-buy.png) no-repeat bottom center #2b333b;
 }
 
-.screen-2__point {}
+.buy__button:hover,
+.buy__button {
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 3px;
+    margin: 0px auto;
+    display: block;
+    background-color: #f01414;
+    transition:all .5s;
+}
+.buy__button:hover{
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+    transform:translate(0,-5px);
+}
+
+/*页脚模块开始*/
+.footer {
+    height: 80px;
+    line-height: 80px;
+    background-color: #07111b;
+    text-align: center;
+    color: #fff;
+}
