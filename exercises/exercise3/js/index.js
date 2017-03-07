@@ -1,5 +1,5 @@
-// (function() {
-//封装获取元素
+"use strict";
+
 var getElem = function(selector) {
     return document.querySelector(selector);
 }
@@ -65,7 +65,8 @@ var screenAnimateElements = {
         '.screen-5__subheading',
         '.screen-5__back'
     ]
-}
+};
+
 var setScreenAnimateInit = function(screenCls) {
     var screen = document.querySelector(screenCls);
     var animateElements = screenAnimateElements[screenCls];
@@ -79,7 +80,12 @@ var setScreenAnimateInit = function(screenCls) {
 
 // 初始化init
 window.onload = function() {
-    for (k in screenAnimateElements) {
+
+    for (var k in screenAnimateElements) {
+
+        if (k === '.screen-1') {
+            continue;
+        }
         setScreenAnimateInit(k);
     }
 }
@@ -96,6 +102,7 @@ var playScreenAnimateDone = function(screenCls) {
 }
 
 //滚动到哪里，就播放到哪里
+
 window.onscroll = function() {
     var top = document.body.scrollTop;
     console.log(top);
@@ -106,23 +113,99 @@ window.onscroll = function() {
         delCls(getElem('.header'), 'header_status_back');
         delCls(getElem('.outline'), 'outline_status_in');
     };
-    if (top) {
-        playScreenAnimateDone('.screen-1');
-    };
-    if (top > 800 - 100) {
+
+    if (top >= 0 && top < 800 - 100) {
+        switchNavItemsActive(0);
+        navTipLeft(0);
+    } else if (top >= 800 - 100 && top < 800 * 2 - 100) {
         playScreenAnimateDone('.screen-2');
-    };
-    if (top > 800 * 2 - 100) {
+        switchNavItemsActive(1);
+        navTipLeft(1);
+    } else if (top >= 800 * 2 - 100 && top < 800 * 3 - 100) {
         playScreenAnimateDone('.screen-3');
-    };
-    if (top > 800 * 3 - 100) {
+        switchNavItemsActive(2);
+        navTipLeft(2);
+    } else if (top >= 800 * 3 - 100 && top < 800 * 4 - 100) {
         playScreenAnimateDone('.screen-4');
-    };
-    if (top > 800 * 4 - 100) {
+        switchNavItemsActive(3);
+        navTipLeft(3);
+    } else if (top >= 800 * 4 - 100 && top < 800 * 5 - 100) {
         playScreenAnimateDone('.screen-5');
-    };
+        switchNavItemsActive(4);
+        navTipLeft(4);
+    } else if (top >= 800 * 5 - 100) {
+        switchNavItemsActive(4);
+        navTipLeft(4);
+    }
+
+}
+
+
+var navItems = getAllElem('.header__nav-item');
+var outlineItems = getAllElem('.outline__item');
+
+
+var switchNavItemsActive = function(idx) {
+    for (var i = 0; i < navItems.length; i++) {
+        delCls(navItems[i], 'header__nav-item_status_active');
+    }
+    addCls(navItems[idx], 'header__nav-item_status_active');
+
+    for (var i = 0; i < outlineItems.length; i++) {
+        delCls(outlineItems[i], 'outline__item_status_active');
+    }
+    addCls(outlineItems[idx], 'outline__item_status_active');
 }
 
 
 
-// })()
+var setNavJump = function(i, lib) {
+    var item = lib[i];
+    item.onclick = function() {
+        document.body.scrollTop = i * 800;
+    }
+}
+
+for (var i = 0; i < navItems.length; i++) {
+    setNavJump(i, navItems);
+}
+for (var i = 0; i < outlineItems.length; i++) {
+    setNavJump(i, outlineItems);
+}
+
+//滑动门效果
+var navTip = getElem('.header__nav-tip');
+
+var setTip = function(idx, lib) {
+
+    lib[idx].onmouseover = function() {
+        navTipLeft(idx);
+    }
+
+    var activeIdx = 0;
+
+    lib[idx].onmouseout = function() {
+        for (var i = 0; i < lib.length; i++) {
+            if (getCls(lib[i]).indexOf('header__nav-item_status_active') != -1) {
+                activeIdx = i;
+                console.log(i);
+                break;
+            }
+        }
+        navTipLeft(activeIdx);
+    }
+
+
+}
+
+function navTipLeft(idx) {
+    navTip.style.left = idx * 100 + 20 + 'px';
+}
+
+
+for (var i = 0; i < navItems.length - 1; i++) {
+    setTip(i, navItems);
+}
+
+switchNavItemsActive(0);
+setTimeout(function() { playScreenAnimateDone('.screen-1'); }, 500);
