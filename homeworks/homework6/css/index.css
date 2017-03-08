@@ -1,0 +1,288 @@
+/*导航栏*/
+
+.container {}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.header__wrap {
+    position: relative;
+    height: 60px;
+}
+
+.header__logo {
+    font-size: 20px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    height: 40px;
+    margin-top: -20px;
+    text-indent: 50px;
+    color: #fff;
+    background: url('../img/logo.png') left center no-repeat;
+}
+
+.header__logo a {
+    color: #fff;
+}
+
+.header__nav {
+    position: relative;
+    float: right;
+    margin: 10px 30px 0 0;
+}
+
+.header__nav::after {
+    clear: both;
+}
+
+.header__nav-item {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    display: inline-block;
+    float: left;
+    width: 60px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.header__nav-item_status_active {
+    color: #f00;
+}
+
+.header__nav-item_custom_button {
+    width: 70px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f00;
+}
+
+.header__nav-item_custom_button:hover {
+    color: #d9d9d9;
+    background-color: #dc143c;
+}
+
+.header__nav-tip {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 60px;
+    height: 2px;
+    transition: all .5s;
+    background: red;
+}
+
+
+/*第一屏*/
+
+.screen-1 {
+    width: 100%;
+    height: 640px;
+    text-align: center;
+    background: url(../img/sc1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.screen-1__heading {
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 220px;
+    color: #fff;
+}
+
+.screen-1__subheading {
+    font-size: 18px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+
+/*第二屏*/
+
+.screen-2 {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.screen-2__wrap {
+    width: 1200px;
+    height: 640px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/sc2-1.png), url(../img/sc2-2.png), url(../img/sc2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%, 61% 79%, 50% 100%;
+}
+
+.screen-2__heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #07111b;
+    padding: 80px 0 20px 0;
+}
+
+.screen-2__tip {
+    width: 47px;
+    height: 3px;
+    margin: 0 auto;
+    background: #f00;
+}
+
+.screen-2__subheading {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+    color: #07111b;
+}
+
+
+/*第三屏*/
+
+.screen-3 {
+    width: 100%;
+    height: 640px;
+    background: url(../img/sc3.png) no-repeat 5% center;
+    background-size: 38% 100%;
+    overflow: hidden;
+    background-color: #2b333b;
+}
+
+.screen-3__wrap {
+    overflow: hidden;
+    width: 800px;
+    height: 640px;
+    margin: 0 0 0 50%;
+    text-align: left;
+}
+
+.screen-3__heading {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 220px 0 20px 0;
+    color: #fff;
+}
+
+.screen-3__tip {
+    width: 47px;
+    height: 3px;
+    background: #f00;
+}
+
+.screen-3__subheading {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.screen-3__language {
+    margin: 150px 0 0 -15px;
+    height: 100px;
+}
+
+.screen-3__language-item {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 0 15px;
+    line-height: 60px;
+    border: 4px solid;
+    border-radius: 50%;
+}
+
+.screen-3__language-item_i_1 {
+    color: #0294b5;
+    border-color: #1f5975;
+}
+
+.screen-3__language-item_i_2 {
+    color: #4372fd;
+    border-color: #424d76;
+}
+
+.screen-3__language-item_i_3 {
+    color: #f14840;
+    border-color: #6b4146;
+}
+
+.screen-3__language-item_i_4 {
+    color: #2a9dda;
+    border-color: #29535f;
+}
+
+.screen-3__language-item_i_5 {
+    color: #83bd50;
+    border-color: #3e4e40;
+}
+
+
+/*第四屏*/
+
+.screen-4 {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.screen-4__wrap {
+    width: 1200px;
+    height: 640px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.screen-4__heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #07111b;
+    padding: 80px 0 20px 0;
+}
+
+.screen-4__tip {
+    width: 47px;
+    height: 3px;
+    margin: 0 auto;
+    background: #f00;
+}
+
+.screen-4__subheading {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+    color: #07111b;
+}
+
+.screen-4__flow {
+    margin: 70px 0 0 -50px;
+    height: 300px;
+}
+
+.screen-4__flow-item {
+    display: inline-block;
+    width: 170px;
+    height: 120px;
+    margin: 0 60px;
+}
+
+.screen-4__fonts {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+}

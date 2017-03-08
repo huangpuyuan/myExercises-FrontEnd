@@ -1,4 +1,3 @@
-_
 /*
 BEM 设计模式
 
@@ -56,7 +55,7 @@ BEM 设计模式
 .header__nav-item:hover {
     color: #f01400;
 }
-.header__nav-item_custom_button {
+    .header__nav-item_custom_button {
     color: #fff;
     background-color: #000;
     width: 60px;
