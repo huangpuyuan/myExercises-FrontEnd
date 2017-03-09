@@ -1,0 +1,63 @@
+/*screen-1*/
+
+.screen-1__heading{ transition: all 1s; }
+.header,
+.screen-1__subheading{ transition: all 1s .8s; }
+
+.screen-1__heading_animate_init { transform: translate(0, 50%); opacity: 0; }
+.header_animate_init,
+.screen-1__subheading_animate_init { transform: translate(0, -100%); opacity: 0; }
+
+.header_animate_done,
+.screen-1__heading_animate_done,
+.screen-1__subheading_animate_done { transform: translate(0, 0); opacity: 1; }
+
+
+/*screen-2*/
+
+.screen-2__heading{ transition: all 1s; }
+.screen-2__tip,
+.screen-2__subheading{ transition: all 1s .5s; }
+.screen-2__man{ transition: all 1s 1s; }
+
+.screen-2__man_animate_init{ opacity: 0; }
+.screen-2__rocket_animate_init{ transform: translateY(120%); }
+.screen-2__heading_animate_init { transform: translate(0, 50%); opacity: 0; }
+.screen-2__tip_animate_init,
+.screen-2__subheading_animate_init { transform: translate(0, 100%); opacity: 0; }
+
+.screen-2__man_animate_done{ opacity: 1; }
+.screen-2__rocket_animate_done{ animation: slideFromBottom 1s linear 1.5s backwards; -webkit-animation:slideFromBottom 1s linear 1.5s backwards; }
+
+.screen-2__tip_animate_done,
+.screen-2__heading_animate_done,
+.screen-2__subheading_animate_done { transform: translate(0, 0); opacity: 1; }
+
+/*火箭抖一抖 关键帧动画*/
+
+@keyframes slideFromBottom { 0% { transform: translateY(120%); } 88% { transform: translateY(-6%); } 95% { transform: translateY(3%); } 100% { transform: translateY(0%); } }
+@-webkit-keyframes slideFromBottom { 0% { transform: translateY(120%); } 88% { transform: translateY(-6%); } 95% { transform: translateY(3%); } 100% { transform: translateY(0%); } }
+
+/*screen-3*/
+.screen-3__orbit{ transition: all ease-in-out 1s; }
+.screen-3__heading{ transition: all 1s .5s; }
+.screen-3__tip,
+.screen-3__subheading{ transition: all 1s 1s; }
+
+.screen-3__language_animate_init{ transform: translateY(300%); }
+.screen-3__orbit_animate_init{transform-origin:left; transform: scale(.25); }
+.screen-3__heading_animate_init { transform: translate(0, 50%); opacity: 0; }
+.screen-3__tip_animate_init,
+.screen-3__subheading_animate_init { transform: translate(0, 100%); opacity: 0; }
+
+.screen-3__orbit_animate_done{ transform-origin:left; transform: scale(1); }
+.screen-3__tip_ainate_done,
+.screen-3__heading_animate_done,
+.screen-3__subheading_animate_done { transform: translate(0, 0); opacity: 1; }
+.screen-3__language_animate_done{ 
+	animation: slideFrom 2s ease-in 1.5s backwards; 
+	-webkit-animation:slideFrom 1.5s ease-in 1.5s backwards; 
+}
+/*语言栏抖一抖*/
+@keyframes slideFrom { 0% { transform: translateY(140%); } 80% { transform: translateY(-15%); } 87%{  transform: translateY(15%); } 95% { transform: translateY(-5%); } 100% { transform: translateY(0%); } }
+@-webkit-keyframes slideFrom { 0% { transform: translateY(140%); } 80% { transform: translateY(-15%); } 87%{ transform: translateY(15%); } 95% { transform: translateY(-5%); } 100% { transform: translateY(0%); } }
