@@ -181,27 +181,22 @@ window.onscroll = function() {
         playScreenAnimateDone('.screen-1');
         switchNavItemsActive(0);
         navTipLeft(0);
-    } else if (top >= 640 - 100 && top < 640 * 2 - 100) {
-    	console.log('第一个640')
+    } else if (top >= 640 - 100 && top < 640 * 2 - 100) {    
         playScreenAnimateDone('.screen-2');
         switchNavItemsActive(1);
         navTipLeft(1);
-    } else if (top >= 640 * 2 - 100 && top < 640 * 3 - 100) {
-        console.log('2倍，1280')
+    } else if (top >= 640 * 2 - 100 && top < 640 * 3 - 100) {        
         playScreenAnimateDone('.screen-3');
         switchNavItemsActive(2);
         navTipLeft(2);
-    } else if (top >= 640 * 3 - 100 && top < 640 * 4 - 100) {
-        console.log('3倍，1920')
+    } else if (top >= 640 * 3 - 100 && top < 640 * 4 - 100) {        
         playScreenAnimateDone('.screen-4');
         switchNavItemsActive(3);
         navTipLeft(3);
-    } else if (top >= 640 * 4 - 100 && top < 640 * 5 - 100) {
-        console.log('4倍，2560')
+    } else if (top >= 640 * 4 - 100 && top < 640 * 5 - 100) {        
         playScreenAnimateDone('.screen-5');
         switchNavItemsActive(4);
         navTipLeft(4);
-        //2440
     }
 
 }

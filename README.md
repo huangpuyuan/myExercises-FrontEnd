@@ -8,6 +8,7 @@
 	* homework3 : [CSS动画--漂浮的白云](https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework3)
 	* homework4 : [javascript基础案例--你的生日是那年的第几天](https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework4) 
 	* homework5 : [javascript原生案例--简单的动态轮播图](https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework5)
+	* homework6 : [javascript综合案例--炫酷h5页面作业版](https://huangpuyuan.github.io/myExercises-FrontEnd/homeworks/homework6)
 * 第三部分： exercise projects:
 	* project1 : [CSS3动态效果--图片滑动特效](https://huangpuyuan.github.io/myExercises-FrontEnd/exercises/CSS3_Slides)	
 	* project2 : [js原生实现--二级联动菜单+轮播图巨幕](https://huangpuyuan.github.io/myExercises-FrontEnd/exercises/exercise2)
