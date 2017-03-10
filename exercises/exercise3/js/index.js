@@ -105,11 +105,12 @@ var playScreenAnimateDone = function(screenCls) {
 
 window.onscroll = function() {
     var top = document.body.scrollTop;
-    console.log(top);
-    if (top > 80) {
+    if (top > 60) {
         addCls(getElem('.header'), 'header_status_back');
         addCls(getElem('.outline'), 'outline_status_in');
+        console.log('aaa')
     } else {
+        console.log('bbb')
         delCls(getElem('.header'), 'header_status_back');
         delCls(getElem('.outline'), 'outline_status_in');
     };

@@ -54,12 +54,16 @@ const screenAnimateElements = {
         '.screen-4__heading',
         '.screen-4__subheading',
         '.screen-4__tip',
-        '.screen-4__flow'
+        '.screen-4__flow-item_f_1',
+        '.screen-4__flow-item_f_2',
+        '.screen-4__flow-item_f_3',
+        '.screen-4__flow-item_f_4'
     ],
     '.screen-5': [
         '.screen-5__heading',
         '.screen-5__tip',
-        '.screen-5__subheading'
+        '.screen-5__subheading',
+        '.screen-5__bghead'
     ]
 };
 
