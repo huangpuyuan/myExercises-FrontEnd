@@ -156,6 +156,7 @@ function navTipLeft(idx) {
     navTip.style.left = idx * 100 + 20 + 'px';
 }
 
+//播放第一屏动画
 function playFirstScreenAnimate() {
     setTimeout(
         function() {
