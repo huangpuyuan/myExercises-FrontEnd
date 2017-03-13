@@ -100,3 +100,12 @@ div{
 	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 ```
+
+## 关于未来 
+
+>>我们再也不需要费劲心机使用css渐变 SVG 裁切 [CSS背景与边框第4版](http://dev.w3.org/csswg/css-backgrounds-4)引入了一个全新的属性corner-shap，配合border-radius使用。
+例如 实现15px排序的斜面`border-radius:15px; corner-shap:bevel;`
+
+* 本文 选自CSS揭秘 
+	* 作者[Lea Verou](https://github.com/LeaVerou) --[website](http://lea.verou.me/)
+	* 译者CSS魔法
