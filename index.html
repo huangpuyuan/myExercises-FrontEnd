@@ -22,7 +22,12 @@
     .page-header {
         margin: .5em 0;
     }
-    
+    .page-header p{
+        background: rgba(31,149,208,.2);
+        margin-bottom:1em;
+        color:#333;
+        transform:translateY(-1em);     
+    }
     i {
         font-size: 4em;
     }
@@ -30,12 +35,13 @@
     .main {
         margin: 0 auto;
     }
-    .thumbnail{
-        clip-path: polygon(
-            35px 0,calc(100% - 35px) 0,100% 35px,100% calc(100% - 35px),calc(100% - 35px) 100%,
-            35px 100%,0 calc(100% - 35px),0 35px
-            );
+    
+    .thumbnail {
+        margin-top:1em; 
+        clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
+        -webkit-clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
     }
+    
     .list-group i {
         font-size: 1.5em;
     }
@@ -44,8 +50,9 @@
 
 <body>
     <div class="container">
-        <header>
-            <h2 class="page-header"><i class="fa fa-road fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;我的前端 <small>学习之路</small></h2>
+        <header class="page-header">
+            <h2><i class="fa fa-road fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;我的前端 <small>学习之路</small></h2>
+            <p class="pull-right"><i class="fa fa-mars" aria-hidden="true"></i> <strong> · </strong> 开泰 -- Software Developer, Designer at GitHub</p>
         </header>
         <div class="row">
             <div class="col-md-2">
@@ -137,7 +144,7 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>6</td>
                         <td><a href="homeworks/homework6">homework6</a></td>
                         <td></td>
                         <td></td>
