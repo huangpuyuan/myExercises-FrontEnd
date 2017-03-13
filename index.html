@@ -13,13 +13,16 @@
     body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
-    }    
+    }
+    
     .container {
         margin: 0 1em;
     }
-    .page-header{
+    
+    .page-header {
         margin: .5em 0;
     }
+    
     i {
         font-size: 4em;
     }
@@ -36,9 +39,14 @@
 
 <body>
     <div class="container">
-        <h2 class="page-header text-center">我的前端 <small>学习之路</small>&nbsp;&nbsp;&nbsp;<i class="fa fa-road fa-2x" aria-hidden="true"></i></h2>
+        <header>
+            <h2 class="page-header"><i class="fa fa-road fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;我的前端 <small>学习之路</small></h2>
+        </header>
         <div class="row">
             <div class="col-md-2">
+                <a href="#" class="thumbnail">
+                    <img src="css-plotting/images/tea.JPG" alt="开化龙顶">
+                </a>
                 <div class="list-group">
                     <a class="list-group-item" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
                     <a class="list-group-item" aria-label="Send email" href="mailto:huangpuyuan@foxmail.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; Email</a>
@@ -133,6 +141,10 @@
                 </table>
             </div>
         </div>
+        <blockquote class="blockquote">
+            <strong>   I &nbsp;♥:</strong>
+            <cite>design,classical music,movies,poem,philosophy,pingpong,video game.</cite>
+        </blockquote>
     </div>
 </body>
 
