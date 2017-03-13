@@ -6,63 +6,86 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>索引页</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
+    }    
+    .container {
+        margin: 0 1em;
     }
-    i{
-        font-size: 5.5em;
+    .page-header{
+        margin: .5em 0;
     }
+    i {
+        font-size: 4em;
+    }
+    
     .main {
-        width: 80%;
         margin: 0 auto;
     }
-    table {
-        margin: 20px;
+    
+    .list-group i {
+        font-size: 1.5em;
     }
     </style>
 </head>
 
 <body>
-    <div class="table-responsive">
-        <div class="main text-center">
-            <h2 class="page-header">我的前端 <small>学习之路: </small></h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Design</h4>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                    <i class="devicon-less-plain-wordmark colored"></i>
-                    <br>
-                    <p>HTML5 -- CSS3 -- BootStrap -- less</p>
+    <div class="container">
+        <h2 class="page-header text-center">我的前端 <small>学习之路</small>&nbsp;&nbsp;&nbsp;<i class="fa fa-road fa-2x" aria-hidden="true"></i></h2>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a class="list-group-item" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                    <a class="list-group-item" aria-label="Send email" href="mailto:huangpuyuan@foxmail.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; Email</a>
+                    <a class="list-group-item" target="_blank" href="https://github.com/huangpuyuan"><i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; github</a>
+                    <a class="list-group-item" target="_blank" href="http://www.weibo.com/u/1782128912"><i class="fa fa-weibo fa-fw" aria-hidden="true"></i>&nbsp; 微博</a>
+                    <a class="list-group-item" target="_blank" href="http://steamcommunity.com/profiles/76561198095641607/"><i class="fa fa-steam fa-fw" aria-hidden="true"></i>&nbsp; Steam</a>
                 </div>
-                <div class="col-md-4">
-                    <h4>Code</h4>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-jquery-plain-wordmark colored"></i>
-                    <i class="devicon-angularjs-plain colored"></i>
-                    <i class="devicon-nodejs-plain-wordmark colored"></i>
-                    <p>JavaScript -- jQuery -- AngularJs -- Node.js</p>
+            </div>
+            <div class="main text-center col-md-10">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Design</h4>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                                <i class="devicon-less-plain-wordmark colored"></i>
+                                <h5>HTML5 - CSS3 - BootStrap - less</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Code</h4>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-jquery-plain-wordmark colored"></i>
+                                <i class="devicon-angularjs-plain colored"></i>
+                                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <h5>JavaScript - jQuery - AngularJs - Node.js</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Tools</h4>
+                                <i class="devicon-git-plain"></i>
+                                <i class="devicon-github-plain-wordmark"></i>
+                                <i class="devicon-atom-original-wordmark"></i>
+                                <i class="devicon-chrome-plain colored"></i>
+                                <h5>git - github - Atom - Chrome</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Tools</h4>
-                    <i class="devicon-git-plain"></i>
-                    <i class="devicon-github-plain-wordmark"></i>
-                    <i class="devicon-atom-original-wordmark"></i>
-                    <i class="devicon-chrome-plain colored"></i>
-                    <p>git -- github -- Atom -- Chrome</p>
-                </div>
+                <h4 class="text-left"><i class="fa fa-chevron-down" aria-hidden="true"></i>&nbsp;My repositories :</h4>
                 <table class="table table-bordered table-hover table-striped">
                     <tr class="info">
                         <td><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                         </td>
                         <td>我的作业</td>
                         <td>我的练习项目</td>
-                        <td>else</td>
+                        <td>其他</td>
                         <td>issue</td>
                     </tr>
                     <tr>
@@ -110,6 +133,7 @@
                 </table>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
