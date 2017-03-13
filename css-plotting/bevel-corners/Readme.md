@@ -27,7 +27,7 @@ div{
 ```css
 
 div{
-	/*第一行不是必需的，加上它是将其作为回退机制；如果默写浏览器不支持CSS渐变，第二行声明会被丢弃。*/
+	/*第一行不是必需的，加上它是将其作为回退机制；如果默认浏览器不支持CSS渐变，第二行声明会被丢弃。*/
 	background: #58a;
 	background: linear-gradient(-45deg,transparent 15px,#58a 0);
 }

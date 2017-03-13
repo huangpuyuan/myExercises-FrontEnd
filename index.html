@@ -3,18 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="witd=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>索引页</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <style>
-    .main {
-        font-family: "微软雅黑";
-        width: 60%;
-        margin: 50px;
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
     }
-    
+    i{
+        font-size: 5.5em;
+    }
+    .main {
+        width: 80%;
+        margin: 0 auto;
+    }
     table {
-        margin: 20px;        
+        margin: 20px;
     }
     </style>
 </head>
@@ -23,53 +30,86 @@
     <div class="table-responsive">
         <div class="main text-center">
             <h2 class="page-header">我的前端 <small>学习之路: </small></h2>
-            <table class="table table-bordered table-hover table-striped">
-                <tr class="info">
-                    <td><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-</td>
-                    <td>我的作业</td>
-                    <td>我的练习项目</td>
-                    <td>else</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><a href="homeworks/homework1">homework1</a></td>
-                    <td><a href="exercises/CSS3_Slides/">exercise1</a></td>
-                    <td><a href="css-plotting/the Five-Starred Red Flag.html">css-plotting1</a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><a href="homeworks/homework2/蓝天白云.html">homework2</a></td>
-                    <td><a href="exercises/exercise2/">exercise2</a></td>
-                    <td><a href="css-plotting/parellelogram/parallelograms-pesudo.html">css-plotting2</a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><a href="homeworks/homework3">homework3</a></td>
-                    <td><a href="exercises/exercise3/">exercise3</a></td>
-                    <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1">ElegentJS--Without Loops</a></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><a href="homeworks/homework4">homework4</a></td>
-                    <td></td>
-                    <td><a href="https://huangpuyuan.github.io/myremindtask/">提醒小插件</a></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><a href="homeworks/homework5">homework5</a></td>
-                    <td></td>
-                    <td><a href="https://huangpuyuan.github.io/learningbootstrap/example/">Bootstrap案例</a></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><a href="homeworks/homework6">homework6</a></td>
-                    <td></td>
-                    <td><a href="https://huangpuyuan.github.io/learningbootstrap/cms/">Bootstrap -- CMS</a></td>
-                </tr>
-            </table>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Design</h4>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-less-plain-wordmark colored"></i>
+                    <br>
+                    <p>HTML5 -- CSS3 -- BootStrap -- less</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Code</h4>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-angularjs-plain colored"></i>
+                    <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    <p>JavaScript -- jQuery -- AngularJs -- Node.js</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tools</h4>
+                    <i class="devicon-git-plain"></i>
+                    <i class="devicon-github-plain-wordmark"></i>
+                    <i class="devicon-atom-original-wordmark"></i>
+                    <i class="devicon-chrome-plain colored"></i>
+                    <p>git -- github -- Atom -- Chrome</p>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                    <tr class="info">
+                        <td><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                        </td>
+                        <td>我的作业</td>
+                        <td>我的练习项目</td>
+                        <td>else</td>
+                        <td>issue</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="homeworks/homework1">homework1</a></td>
+                        <td><a href="exercises/CSS3_Slides/">exercise1</a></td>
+                        <td><a href="css-plotting/the Five-Starred Red Flag.html">css-plotting1</a></td>
+                        <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1">ElegentJS--Without Loops</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="homeworks/homework2/蓝天白云.html">homework2</a></td>
+                        <td><a href="exercises/exercise2/">exercise2</a></td>
+                        <td><a href="https://huangpuyuan.github.io/myremindtask/">提醒小插件</a></td>
+                        <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2">CSS实现切角效果</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="homeworks/homework3">homework3</a></td>
+                        <td><a href="exercises/exercise3/">exercise3</a></td>
+                        <td><a href="https://huangpuyuan.github.io/learningbootstrap/example/">Bootstrap案例</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="homeworks/homework4">homework4</a></td>
+                        <td></td>
+                        <td><a href="https://huangpuyuan.github.io/learningbootstrap/cms/">Bootstrap -- CMS</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="homeworks/homework5">homework5</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="homeworks/homework6">homework6</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
