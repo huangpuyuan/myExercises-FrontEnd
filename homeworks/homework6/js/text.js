@@ -32,7 +32,7 @@ function delCls(element, cls) {
 
 const screenAnimateElements = {
     '.screen-1': [
-    	'.header',
+        '.header',
         '.screen-1__heading',
         '.screen-1__subheading'
     ],
@@ -44,7 +44,7 @@ const screenAnimateElements = {
         '.screen-2__man'
     ],
     '.screen-3': [
-    	'.screen-3__orbit',
+        '.screen-3__orbit',
         '.screen-3__heading',
         '.screen-3__subheading',
         '.screen-3__tip',
@@ -84,7 +84,7 @@ function setScreenAnimation(screenCls) {
         };
         if (isAnimateDone === false) {
             for (let e of animateElements) {
-            	let element = getElem(e);
+                let element = getElem(e);
                 setCls(element, getCls(element).replace('_animate_init', '_animate_done'));
             }
             isAnimateDone = true;
@@ -92,28 +92,19 @@ function setScreenAnimation(screenCls) {
         };
         if (isAnimateDone === true) {
             for (let e of animateElements) {
-            	let element = getElem(e);
+                let element = getElem(e);
                 setCls(element, getCls(element).replace('_animate_done', '_animate_init'));
             }
             isAnimateDone = false;
             return;
         };
-
-        // for (let e of animateElements) {
-        // 	let element =getElem(e);
-        //     if (isAnimateDone) {
-        //     	setCls(element,getCls(element).replace('_animate_done', '_animate_init'));
-        //     	isAnimateDone = false;
-        //     } else {
-        //     	setCls(element,getCls(element).replace('_animate_init', '_animate_done'));
-        //     	isAnimateDone = true;
-            	
-        //     }
-        // }
-
     }
 }
 
-for (k in screenAnimateElements) {
-    setScreenAnimation(k);
+function listenScreenAnimation {
+    for (k in screenAnimateElements) {
+        setScreenAnimation(k);
+    }
 }
+
+listenScreenAnimation();

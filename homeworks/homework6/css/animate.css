@@ -51,10 +51,7 @@
 .screen-3__tip_ainate_done,
 .screen-3__heading_animate_done,
 .screen-3__subheading_animate_done { transform: translate(0, 0); opacity: 1; }
-.screen-3__language_animate_done{ 
-	animation: slideFrom 2s ease-in 1.5s backwards; 
-	-webkit-animation:slideFrom 1.5s ease-in 1.5s backwards; 
-}
+.screen-3__language_animate_done{  animation: slideFrom 2s ease-in 1.5s backwards;  -webkit-animation:slideFrom 1.5s ease-in 1.5s backwards;  }
 
 
 /*screen-4*/
@@ -99,37 +96,19 @@
 
 
 /* 导航栏动态效果 */
-.header_status_back{
-	transition: all 1s;
-	background: rgba(255,255,255,.5);
-	box-shadow: 2px 1px 1px rgba(0,0,0,.3);
-}
+
+.header_status_back{ transition: all 1s; background: rgba(255,255,255,.5); box-shadow: 2px 1px 1px rgba(0,0,0,.3); }
 .header_status_back .header__logo a,
-.header_status_back .header__nav-item {
-    color: rgba(0,0,0,.7);
-}
+.header_status_back .header__nav-item { color: rgba(0,0,0,.7); }
 .header_status_back .header__logo a:hover,
 .header_status_back .header__nav-item:hover,
-.header_status_back .header__nav-item_status_active{
-    color: #f01400;
-}
-.header_status_back .header__nav-item_custom_button{
-    color: #fff;
-}
-.header_status_back .header__nav-item_custom_button:hover{
-    color: #d9d9d9;
-}
+.header_status_back .header__nav-item_status_active{ color: #f01400; }
+.header_status_back .header__nav-item_custom_button{ color: #fff; }
+.header_status_back .header__nav-item_custom_button:hover{ color: #d9d9d9; }
 /*大纲动态效果*/
-.outline {
-    transition: all .6s;
-    transform: translate(100%, 0);
-    opacity: 0;
-}
+.outline { transition: all .6s; transform: translate(100%, 0); opacity: 0; }
 
-.outline_status_in {
-    transform: translate(0, 0);
-    opacity: 1;
-}
+.outline_status_in { transform: translate(0, 0); opacity: 1; }
 /*火箭抖一抖 关键帧动画*/
 
 @keyframes slideFromBottom { 0% { transform: translateY(120%); } 88% { transform: translateY(-6%); } 95% { transform: translateY(3%); } 100% { transform: translateY(0%); } }

@@ -69,7 +69,12 @@ const screenAnimateElements = {
     ]
 };
 
+//全局变量
+var navItems = getAllElem('.header__nav-item'), //导航条
+    outlineItems = getAllElem('.outline__item'), //侧边大纲
+    navTip = getElem('.header__nav-tip'); //滑动条
 
+//动画类初始化 A -> A_animate_init
 function setScreenAnimateInit(screenCls) {
     var screenElm = getElem(screenCls),
         animateElements = screenAnimateElements[screenCls];
@@ -78,6 +83,7 @@ function setScreenAnimateInit(screenCls) {
     }
 }
 
+//动画播放事件 A_animate_init -> A_animate_done
 function playScreenAnimateDone(screenCls) {
     var screenElm = getElem(screenCls),
         animateElements = screenAnimateElements[screenCls];
@@ -86,11 +92,7 @@ function playScreenAnimateDone(screenCls) {
         setCls(element, getCls(element).replace('_animate_init', '_animate_done'));
     }
 }
-//全局变量
-var navItems = getAllElem('.header__nav-item'), //导航条
-    outlineItems = getAllElem('.outline__item'), //侧边大纲
-    navTip = getElem('.header__nav-tip') //滑动条
-;
+
 
 //导航条激活插件
 function switchNavItemsActive(idx) {
@@ -107,7 +109,7 @@ function switchNavItemsActive(idx) {
 
 //监听导航条和大纲联动跳转事件
 function listenNavJump() {
-    for (var i = 0; i < navItems.length; i++) {
+    for (var i = 0; i < navItems.length - 1; i++) {
         setNavJump(i, navItems);
     }
     for (var i = 0; i < outlineItems.length; i++) {
@@ -118,19 +120,19 @@ function listenNavJump() {
 function setNavJump(i, lib) {
     var item = lib[i];
     item.onclick = function() {
-        console.log(i);
         document.body.scrollTop = i * 650;
     }
 }
 
 
-//滑动门特效
+//滑动门特效监听
 function listenTipLeft() {
     for (var i = 0; i < navItems.length - 1; i++) {
         setTip(i, navItems);
     }
 }
 
+//设置滑动门
 function setTip(idx, lib) {
     var activeIdx = 0;
     lib[idx].onmouseover = function() {
@@ -140,7 +142,6 @@ function setTip(idx, lib) {
         for (var i = 0; i < lib.length; i++) {
             if (getCls(lib[i]).indexOf('header__nav-item_status_active') != -1) {
                 activeIdx = i;
-                console.log(i);
                 break;
             }
         }
@@ -150,25 +151,38 @@ function setTip(idx, lib) {
 
 }
 
+//导航条右滑动函数
 function navTipLeft(idx) {
     navTip.style.left = idx * 100 + 20 + 'px';
+}
+
+function playFirstScreenAnimate() {
+    setTimeout(
+        function() {
+            playScreenAnimateDone('.screen-1');
+        }, 500);
 }
 
 //页面载入事件
 window.onload = function() {
     listenNavJump();
     listenTipLeft();
+    playFirstScreenAnimate();
     for (k in screenAnimateElements) {
+        if (k === '.screen1') {
+            continue;
+        }
         setScreenAnimateInit(k);
     }
 }
 
 //滚动条事件
 window.onscroll = function() {
-    var top = document.body.scrollTop,
+    var top = document.body.scrollTop, //滚动条高度
         headerElem = getElem('.header'),
         outlineElem = getElem('.outline');
-    console.log(top);
+
+    //导航条和大纲样式改变        
     if (top >= 100) {
         addCls(headerElem, 'header_status_back');
         addCls(outlineElem, 'outline_status_in');
@@ -177,23 +191,24 @@ window.onscroll = function() {
         delCls(outlineElem, 'outline_status_in');
     }
 
+    //动画播放，导航条激活，滚动条的滑动门特效
     if (top >= 0 && top < 640 - 100) {
         playScreenAnimateDone('.screen-1');
         switchNavItemsActive(0);
         navTipLeft(0);
-    } else if (top >= 640 - 100 && top < 640 * 2 - 100) {    
+    } else if (top >= 640 - 100 && top < 640 * 2 - 100) {
         playScreenAnimateDone('.screen-2');
         switchNavItemsActive(1);
         navTipLeft(1);
-    } else if (top >= 640 * 2 - 100 && top < 640 * 3 - 100) {        
+    } else if (top >= 640 * 2 - 100 && top < 640 * 3 - 100) {
         playScreenAnimateDone('.screen-3');
         switchNavItemsActive(2);
         navTipLeft(2);
-    } else if (top >= 640 * 3 - 100 && top < 640 * 4 - 100) {        
+    } else if (top >= 640 * 3 - 100 && top < 640 * 4 - 100) {
         playScreenAnimateDone('.screen-4');
         switchNavItemsActive(3);
         navTipLeft(3);
-    } else if (top >= 640 * 4 - 100 && top < 640 * 5 - 100) {        
+    } else if (top >= 640 * 4 - 100) {
         playScreenAnimateDone('.screen-5');
         switchNavItemsActive(4);
         navTipLeft(4);
