@@ -11,32 +11,37 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
     body {
-        font-family: 'Montserrat',"Microsoft Yahei", sans-serif;
+        font-family: 'Montserrat', "Microsoft Yahei", sans-serif;
         font-size: 14px;
-    }    
+    }
+    
     .container,
     .main {
         margin: 0 auto;
-    }   
+    }
+    
     .page-header {
         margin: .5em auto;
     }
-    .page-header p{
-        background: rgba(31,149,208,.2);
-        margin-bottom:1em;
-        color:#333;
-        transform:translateY(-1em);     
+    
+    .page-header p {
+        background: rgba(31, 149, 208, .2);
+        margin-bottom: 1em;
+        color: #333;
+        transform: translateY(-1em);
     }
+    
     i {
         font-size: 4em;
-    }    
+    }
+    
     .thumbnail {
-        margin-top:1em; 
+        margin-top: 1em;
         clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
         -webkit-clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
-    }    
+    }
+    
     .list-group i {
         font-size: 1.5em;
     }
@@ -94,58 +99,115 @@
                     </div>
                 </div>
                 <h4 class="text-left"><i class="fa fa-chevron-down" aria-hidden="true"></i>&nbsp;My repositories :</h4>
-                <table class="table table-bordered table-hover table-striped">
-                    <tr class="info">
-                        <td><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                        </td>
-                        <td>我的作业</td>
-                        <td>我的练习项目</td>
-                        <td>其他</td>
-                        <td>issue</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="homeworks/homework1">homework1</a></td>
-                        <td><a href="exercises/CSS3_Slides/">exercise1</a></td>
-                        <td><a href="https://huangpuyuan.github.io/app_angularJS/dist/" target="_blank">我的第一个单页应用<br>——基于AngularJS的移动APP</a></td>
-                        <td><a href="https://github.com/huangpuyuan/app_angularJS/issues/1">AngularJS 实现单页应用</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><a href="homeworks/homework2/蓝天白云.html">homework2</a></td>
-                        <td><a href="exercises/exercise2/">exercise2</a></td>
-                        <td><a href="https://huangpuyuan.github.io/myremindtask/">提醒小插件</a></td>
-                        <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1">ElegentJS--Without Loops</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><a href="homeworks/homework3">homework3</a></td>
-                        <td><a href="exercises/exercise3/">exercise3</a></td>
-                        <td><a href="https://huangpuyuan.github.io/learningbootstrap/example/">Bootstrap案例</a></td>
-                        <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2">CSS实现切角效果</a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><a href="homeworks/homework4">homework4</a></td>
-                        <td></td>
-                        <td><a href="https://huangpuyuan.github.io/learningbootstrap/cms/">Bootstrap -- CMS</a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><a href="homeworks/homework5">homework5</a></td>
-                        <td></td>
-                        <td><a href="http://zt.hkstv.tv" target="_blank">Bootstrap响应式页面--myworks</a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><a href="homeworks/homework6">homework6</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+                    <li class="active"><a href="#tab-projects" role="tab" data-toggle="tab"><span class="glyphicon glyphicon glyphicon-tasks" aria-hidden="true"></span>&nbsp;项目</a></li>
+                    <li><a href="#tab-exercise" role="tab" data-toggle="tab"><span class="glyphicon  glyphicon-list-alt" aria-hidden="true"></span>&nbsp;练习</a></li>
+                    <li><a href="#tab-homeworks" role="tab" data-toggle="tab"><span class="glyphicon  glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;作业</a></li>
+                    <li><a href="#tab-issues" role="tab" data-toggle="tab"><span class="glyphicon  glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;issues</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tab-projects">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>1</td>
+                                <td><a href="https://huangpuyuan.github.io/app_angularJS/dist/" target="_blank">我的第一个单页应用</a></td>
+                                <td>基于AngularJS的移动app -- 招聘主题</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="https://huangpuyuan.github.io/myremindtask/">提醒小插件</a></td>
+                                <td>用jQuery写的网页应用</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="http://zt.hkstv.tv" target="_blank">响应式的H5页面</a></td>
+                                <td>用bootstrap做的一个网页专题移动端适配</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="https://huangpuyuan.github.io/learningbootstrap/cms/">简易版CMS</a></td>
+                                <td>用bootstrap快速搭建一个后台</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="https://huangpuyuan.github.io/learningbootstrap/cms/">bootstrap案例</a></td>
+                                <td>用bootstrap原生案例模板</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab-exercise">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>1</td>
+                                <td><a href="exercises/CSS3_Slides/">exercise1</a></td>
+                                <td>CSS3动态效果--图片滑动特效</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="exercises/exercise2/">exercise2</a></td>
+                                <td>js原生实现--二级联动菜单+轮播图巨幕</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="exercises/exercise3/">exercise3</a></td>
+                                <td>js原生实现的炫酷H5页面--开发设计一个完整案例</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab-homeworks">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>1</td>
+                                <td><a href="homeworks/homework1">homework1</a></td>
+                                <td> 一个H5静态页 </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="homeworks/homework2/蓝天白云.html">homework2</a></td>
+                                <td> CSS作图--蓝天白云</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="homeworks/homework3">homework3</a></td>
+                                <td>CSS动画--漂浮的白云</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="homeworks/homework4">homework4</a></td>
+                                <td>javascript基础案例--你的生日是那年的第几天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="homeworks/homework5">homework5</a></td>
+                                <td>javascript原生案例--简单的动态轮播图</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="homeworks/homework6">homework6</a></td>
+                                <td> javascript综合案例--炫酷h5页面作业版</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab-issues">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>1</td>
+                                <td><a href="https://github.com/huangpuyuan/app_angularJS/issues/1">AngularJS 实现单页应用</a></td>
+                                <td>做一个完整单页应用,使用gulp/less/bower</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1">ElegentJS--Without Loops</a></td>
+                                <td>优雅的JS，使用数组的高级方法</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2">CSS实现切角效果</a></td>
+                                <td>CSS作图，CSS揭秘</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <blockquote class="blockquote">
@@ -153,6 +215,8 @@
             <cite>design,classical music,movies,poem,philosophy,pingpong,video game.</cite>
         </blockquote>
     </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
