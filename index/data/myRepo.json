@@ -1,0 +1,110 @@
+[{
+    "tabId": "1",
+    "tabs": "projects",
+    "name": "项目",
+    "icon": "tasks",
+    "details": [{
+        "id": "1",
+        "title": "我的第一个单页应用",
+        "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
+        "desc": "基于AngularJS的移动app -- 招聘主题"
+    }, {
+        "id": "2",
+        "title": "提醒小插件",
+        "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
+        "desc": "用jQuery写的网页应用"
+    }, {
+        "id": "3",
+        "title": "响应式的H5页面",
+        "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
+        "desc": "基于AngularJS的移动app -- 招聘主题"
+    }, {
+        "id": "4",
+        "title": "简易版CMS",
+        "src": "https://huangpuyuan.github.io/learningbootstrap/cms/",
+        "desc": "用bootstrap快速搭建一个后台"
+    }, {
+        "id": "5",
+        "title": "bootstrap案例",
+        "src": "https://huangpuyuan.github.io/learningbootstrap/example/",
+        "desc": "基于bootstrap原生案例模板"
+    }]
+}, {
+    "tabId": "2",
+    "tabs": "exercises",
+    "name": "练习",
+    "icon": "list-alt",
+    "details": [{
+        "id": "1",
+        "title": "exercise1",
+        "src": "exercises/CSS3_Slides/",
+        "desc": "CSS3动态效果--图片滑动特效"
+    }, {
+        "id": "2",
+        "title": "exercise2",
+        "src": "exercises/exercise2/",
+        "desc": "js原生实现--二级联动菜单+轮播图巨幕"
+    }, {
+        "id": "3",
+        "title": "exercise3",
+        "src": "exercises/exercise3/",
+        "desc": " js原生实现的炫酷H5页面--开发设计一个完整案例"
+    }]
+}, {
+    "tabId": "3",
+    "tabs": "homeworks",
+    "name": "作业",
+    "icon": "pencil",
+    "details": [{
+        "id": "1",
+        "title": "homework1",
+        "src": "homeworks/homework1",
+        "desc": "一个H5静态页"
+    }, {
+        "id": "2",
+        "title": "homework2",
+        "src": "homeworks/homework2/蓝天白云.html",
+        "desc": " CSS作图--蓝天白云"
+    }, {
+        "id": "3",
+        "title": "homework3",
+        "src": "homeworks/homework3",
+        "desc": "CSS动画--漂浮的白云"
+    }, {
+        "id": "4",
+        "title": "homework4",
+        "src": "homeworks/homework4",
+        "desc": "javascript基础案例--你的生日是那年的第几天"
+    }, {
+        "id": "5",
+        "title": "homework5",
+        "src": "homeworks/homework5",
+        "desc": "javascript原生案例--简单的动态轮播图"
+    }, {
+        "id": "6",
+        "title": "homework6",
+        "src": "homeworks/homework6",
+        "desc": "javascript综合案例--炫酷h5页面作业版"
+    }]
+}, {
+    "tabId": "4",
+    "tabs": "issues",
+    "name": "文档",
+    "icon": "bookmark",
+    "details": [{
+        "id": "1",
+        "title": "AngularJS 实现单页应用",
+        "src": "exercisesissueesCSS3_Slides/",
+        "desc": "文章如何做一个完整单页应用"
+    }, {
+        "id": "2",
+        "title": "ElegentJS--Without Loops",
+        "src": "exercises/exercise2/",
+        "desc": "优雅的JS，使用数组的高级方法"
+    }, {
+        "id": "3",
+        "title": "CSS实现切角效果",
+        "src": "exercises/exercise3/",
+        "desc": " CSS作图，CSS揭秘"
+    }]
+}]
