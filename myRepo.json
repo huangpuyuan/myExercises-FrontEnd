@@ -11,12 +11,12 @@
     }, {
         "id": "2",
         "title": "提醒小插件",
-        "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
+        "src": "https://huangpuyuan.github.io/myremindtask/",
         "desc": "用jQuery写的网页应用"
     }, {
         "id": "3",
         "title": "响应式的H5页面",
-        "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
+        "src": "http://zt.hkstv.tv/",
         "desc": "用bootstrap做的一个网页专题移动端适配"
     }, {
         "id": "4",
@@ -94,17 +94,17 @@
     "details": [{
         "id": "1",
         "title": "AngularJS 实现单页应用",
-        "src": "exercisesissueesCSS3_Slides/",
+        "src": "https://github.com/huangpuyuan/app_angularJS/issues/1",
         "desc": "文章如何做一个完整单页应用"
     }, {
         "id": "2",
         "title": "ElegentJS--Without Loops",
-        "src": "exercises/exercise2/",
+        "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1",
         "desc": "优雅的JS，使用数组的高级方法"
     }, {
         "id": "3",
         "title": "CSS实现切角效果",
-        "src": "exercises/exercise3/",
+        "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2",
         "desc": " CSS作图，CSS揭秘"
     }]
 }]
