@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>背景定位</title>
+    <style>
+    body {
+        font-size: 20px;
+    }
+    
+    div {
+        height: 5em;
+        width: 10em;
+        margin: 1.5em;
+        padding: 10px;
+        color: #fff;
+        font-weight: lighter;
+    }
+    
+    .pos {
+        background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+        background-position: right 20px bottom 10px;
+    }
+    
+    .origin {
+        background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+        background-origin: content-box;
+    }
+    
+    .calc {
+        background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+        background-position: calc(100% - 20px) calc(100% - 10px);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="pos">Code Pirate</div>
+    <div class="origin">Code origin</div>
+    <div class="calc">Code origin</div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>多重边框</title>
+    <style>
+    body{
+    }
+    div {
+    	display:block;
+        margin: 5em;
+        width: 10em;
+        height: 8em;
+        background: yellowgreen;
+    }
+    
+    .muti {        
+        box-shadow: 0 0 0 10px #655, 0 0 0 20px deeppink;
+    }
+    
+    .outline {
+    	border:10px solid #655;
+    	outline: 10px solid deeppink;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="muti"></div>
+    <div class="outline"></div>
+</body>
+
+</html>
