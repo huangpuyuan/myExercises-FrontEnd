@@ -14,7 +14,15 @@
     body {
         font-family: 'Montserrat', "Microsoft Yahei", sans-serif;
         font-size: 14px;
+        background: repeating-linear-gradient( 45deg, transparent, transparent 1em, moccasin 0, moccasin 2em, transparent 0, transparent 3em, powderblue 0, powderblue 4em, transparent 0, transparent 5em, lavender 0, lavender 6em, transparent 0, transparent 7em, beige 0, beige 8em), repeating-linear-gradient( -45deg, transparent, transparent 1em, khaki 0, khaki 2em, transparent 0, transparent 3em, beige 0, beige 4em, transparent 0, transparent 5em, peachpuff 0, peachpuff 6em), whitesmoke;
+        background-blend-mode: multiply;
     }
+    .tab-content{
+        padding: 1em;
+        background: hsla(0,0%,100%,.2);
+        border: 1em solid hsla(0,0%,100%,.1);
+        border-radius: 1em;
+    } 
     
     .container,
     .main {
@@ -26,17 +34,21 @@
     }
     
     .page-header p {
-        background: rgba(31, 149, 208, .2);
+        background: hsla(0,0%,100%,.5);
+        border-radius: 2px; 
         margin-bottom: 1em;
-        color: #333;
+        color: #222;
         transform: translateY(-1em);
     }
+
+
     
     i {
         font-size: 4em;
     }
     
     .thumbnail {
+        background: hsla(0,0%,100%,.3);
         margin-top: 1em;
         clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
         -webkit-clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
@@ -44,6 +56,9 @@
     
     .list-group i {
         font-size: 1.5em;
+    }
+    blockquote{
+        background: hsla(0,0%,100%,.1);
     }
     </style>
 </head>
@@ -56,7 +71,7 @@
         </header>
         <div class="row">
             <div class="col-md-2">
-                <a href="#" class="thumbnail">
+                <a href="http://huangpuyuan.github.io" class="thumbnail">
                     <img src="css-plotting/images/tea.JPG" alt="开化龙顶">
                 </a>
                 <div class="list-group">

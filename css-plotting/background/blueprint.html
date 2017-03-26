@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>网格</title>
+    <style>
+    div {
+        display: inline-block;
+        width: 600px;
+        height: 450px;
+    }
+    
+    .grad1 {
+        /*background:#58a;*/
+        background: white;
+        background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0), linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+        background-size: 30px 30px;
+    }
+    
+    .grad2 {
+        background: #58a;
+        background-image: linear-gradient(white 1px, transparent 0), linear-gradient(90deg, white 1px, transparent);
+        background-size: 30px 30px;
+    }
+    
+    .blueprint {
+        background: #58a;
+        background-image: linear-gradient(white 2px, transparent 0), linear-gradient(90deg, white 2px, transparent 0), linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0), linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+        background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+        ;
+    }
+    
+    .polka {
+        background: #655;
+        background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 15px;
+    }
+    
+    .page {
+        background-color: #fff;
+        background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 1.2em;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="blueprint"></div>
+    <div class="polka"></div>
+    <div class="page"> this is a paper</div>
+</body>
+
+</html>

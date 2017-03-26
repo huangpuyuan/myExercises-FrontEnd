@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>边框内圆角</title>
+    <style>    
+    .something-meaningful {
+    	width: 20em;
+        height:5em;
+    	margin:2em;
+        background-color: #655;
+        padding: .8em;
+    }
+    
+    .something-meaningful > div {
+        background-color: tan;
+        padding: 1em;
+        border-radius: .8em; 
+    }
+    .outline{
+    	width: 10em;
+        height:4em;
+    	margin:1em;
+    	background: tan;
+    	border-radius:.8em;
+    	padding: 1em;
+    	box-shadow: 0 0 0 .4em #655;
+    	outline: .6em solid #655;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="something-meaningful">
+        <div>
+            have a nice subtle inner rounding, don't I look pretty?
+        </div>
+    </div>
+	<div class="outline">
+		have a nice subtle inner rounding, don't I look pretty?
+	</div>
+</body>
+
+</html>
