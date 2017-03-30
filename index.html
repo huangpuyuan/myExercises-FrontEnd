@@ -19,13 +19,15 @@
     }
     .tab-content{
         padding: 1em;
-        background: hsla(0,0%,100%,.2);
-        border: 1em solid hsla(0,0%,100%,.1);
+        box-shadow: 3px 3px 3px 0 rgba(0,0,0,.1);
         border-radius: 1em;
     } 
-    
+    .container{
+    	height: 100vh;
+    }
     .container,
     .main {
+        background: hsla(0,0%,100%,.1);
         margin: 0 auto;
     }
     
@@ -57,9 +59,13 @@
     .list-group i {
         font-size: 1.5em;
     }
-    blockquote{
-        background: hsla(0,0%,100%,.1);
+	blockquote{
+		overflow:auto;
+	}
+    cite{
+    	font-family: "Microsoft Yahei";
     }
+
     </style>
 </head>
 
