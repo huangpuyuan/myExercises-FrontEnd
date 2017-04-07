@@ -118,5 +118,10 @@
         "title": "CSS实现切角效果",
         "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2",
         "desc": " CSS作图，CSS揭秘"
+    },{
+        "id": "6",
+        "title": "RESTful API",
+        "src": "https://github.com/huangpuyuan/restfulAPI/issues/1",
+        "desc": "api设计 —— 与服务端通讯"
     }]
 }]
