@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单组件的复用</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    i {
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+    }
+    
+    label {
+        width: 70px;
+    }
+    
+    .form-control {
+        display: inline-block;
+        width: 150px;
+    }
+    
+    h5 {
+        display: inline-block;
+        padding-left: 10px;
+        color: red;
+    }
+    </style>
+</head>
+
+<body ng-app="mydemo" ng-controller="myCtrl">
+    <div class="container">
+        <h2 class="text-center page-header"><small>如何看待需求</small></h2>
+        <h3>比较测试：表单</h3>
+        <hr>
+        <div class="form-group">
+            <i>*</i>
+            <label for="maxnum">最大数:</label>
+            <input class="form-control" type="text" id="maxnum" />
+            <h5 class="text-danger message"></h5>
+        </div>
+        <div class="form-group">
+            <i>*</i>
+            <label for="minnum">最小数:</label>
+            <input class="form-control" type="text" id="minnum" />
+            <h5 class="text-danger message"></h5>
+        </div>
+        <div class="form-group">
+            <i>*</i>
+            <label for="pwd">登入密码:</label>
+            <input class="form-control" type="text" id="pwd" />
+            <h5 class="text-danger message"></h5>
+        </div>
+        <div class="form-group">
+            <i>*</i>
+            <label for="pwd_comfirm">确认密码:</label>
+            <input class="form-control" type="text" id="pwd_comfirm" />
+            <h5 class="text-danger message"></h5>
+        </div>
+        <h3>工具栏生成器</h3>
+        <hr>
+        <div>
+            <a href="" class="label label-default">A</a>
+            <button class="btn">B</button>
+            <input type="text" placeholder="C">
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divide	r"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+    <script>
+    /**
+     *  Module
+     *
+     * Description
+     */
+    angular.module('mydemo', []).controller('myCtrl', ['$scope', function($scope) {
+
+    }]);
+    </script>
+</body>
+
+</html>

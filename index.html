@@ -24,13 +24,12 @@
     } 
     .container{
     	height: 100vh;
-    }
-    .container,
-    .main {
-        background: hsla(0,0%,100%,.4);
+        background: hsla(0,0%,100%,.35);
         margin: 0 auto;
     }
-    
+    .main{
+        margin: 0 auto;
+    }
     .page-header {
         margin: .5em auto;
     }
@@ -43,14 +42,12 @@
         transform: translateY(-1em);
     }
 
-
-    
     i {
         font-size: 4em;
     }
     
     .thumbnail {
-        background: hsla(0,0%,100%,.3);
+        background: hsla(0,0%,100%,.1);
         margin-top: 1em;
         clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
         -webkit-clip-path: polygon( 35px 0, calc(100% - 35px) 0, 100% 35px, 100% calc(100% - 35px), calc(100% - 35px) 100%, 35px 100%, 0 calc(100% - 35px), 0 35px);
@@ -65,7 +62,16 @@
     cite{
     	font-family: "Microsoft Yahei";
     }
-
+    @media screen and (max-width: 768px){
+        .container{
+            height: 200vh;
+        }        
+    }
+    @media screen and (max-width: 414px){
+        .container{
+            height: 250vh;
+        }        
+    }
     </style>
 </head>
 
