@@ -13,18 +13,24 @@
         "title": "提醒小插件",
         "src": "https://huangpuyuan.github.io/myremindtask/",
         "desc": "用jQuery写的网页应用"
-    }, {
+    }, 
+    {
         "id": "3",
         "title": "响应式的H5页面",
         "src": "http://zt.hkstv.tv/",
         "desc": "用bootstrap做的一个网页专题移动端适配"
-    }, {
+    },{
         "id": "4",
+        "title": "基于angularjs的h5应用--项目3(2)",
+        "src": "http://zt.hkstv.tv/api",
+        "desc": "项目3的后续。内容列表、详细页、移动适配、跳转、分页、模板渲染、API制作"
+    },{
+        "id": "5",
         "title": "简易版CMS",
         "src": "https://huangpuyuan.github.io/learningbootstrap/cms/",
         "desc": "用bootstrap快速搭建一个后台"
     }, {
-        "id": "5",
+        "id": "6",
         "title": "bootstrap案例",
         "src": "https://huangpuyuan.github.io/learningbootstrap/example/",
         "desc": "基于bootstrap原生案例模板"
