@@ -1,133 +1,172 @@
-[{
+[
+  {
     "tabId": "1",
     "tabs": "projects",
     "name": "项目",
     "icon": "tasks",
-    "details": [{
+    "details": [
+      {
         "id": "1",
         "title": "我的第一个单页应用",
         "src": "https://huangpuyuan.github.io/app_angularJS/dist/",
         "desc": "基于AngularJS的移动app -- 招聘主题"
-    }, {
+      },
+      {
         "id": "2",
-        "title": "提醒小插件",
-        "src": "https://huangpuyuan.github.io/myremindtask/",
-        "desc": "用jQuery写的网页应用"
-    }, 
-    {
-        "id": "3",
         "title": "响应式的H5页面",
         "src": "http://zt.hkstv.tv/",
-        "desc": "用bootstrap做的一个网页专题移动端适配"
-    },{
-        "id": "4",
-        "title": "基于angularjs的h5应用--项目3(2)",
+        "desc": "用bootstrap做的一个网页专题（书画展的活动详情）移动端适配"
+      },
+      {
+        "id": "3",
+        "title": "AngularJs（1.6版本）的H5页面 ",
         "src": "http://zt.hkstv.tv/api",
-        "desc": "项目3的后续。内容列表、详细页、移动适配、跳转、分页、模板渲染、API制作"
-    },{
+        "desc": "接上一个项目给公司做的小应用。内容列表、详细页、移动适配、跳转、分页、模板渲染、API制作"
+      },
+      {
+        "id": "4",
+        "title": "极客精神——试试 Angular4 开发",
+        "src": "https://huangpuyuan.github.io/Angular2Action/dist/",
+        "desc": "使用Angular2（Angular4）完成的一个简单页面，制作ing..."
+      },
+      {
         "id": "5",
+        "title": "jQuery提醒小插件",
+        "src": "https://huangpuyuan.github.io/myremindtask/",
+        "desc": "用jQuery写的网页应用"
+      },
+      {
+        "id": "6",
         "title": "简易版CMS",
         "src": "https://huangpuyuan.github.io/learningbootstrap/cms/",
         "desc": "用bootstrap快速搭建一个后台"
-    }, {
-        "id": "6",
-        "title": "bootstrap案例",
+      },
+      {
+        "id": "7",
+        "title": "bootstrap案例入门",
         "src": "https://huangpuyuan.github.io/learningbootstrap/example/",
         "desc": "基于bootstrap原生案例模板"
-    }]
-}, {
+      }
+    ]
+  },
+  {
     "tabId": "2",
     "tabs": "exercises",
     "name": "练习",
     "icon": "list-alt",
-    "details": [{
+    "details": [
+      {
         "id": "1",
         "title": "exercise1",
         "src": "exercises/CSS3_Slides/",
         "desc": "CSS3动态效果--图片滑动特效"
-    }, {
+      },
+      {
         "id": "2",
         "title": "exercise2",
         "src": "exercises/exercise2/",
         "desc": "js原生实现--二级联动菜单+轮播图巨幕"
-    }, {
+      },
+      {
         "id": "3",
         "title": "exercise3",
         "src": "exercises/exercise3/",
         "desc": " js原生实现的炫酷H5页面--开发设计一个完整案例"
-    }]
-}, {
+      }
+    ]
+  },
+  {
     "tabId": "3",
     "tabs": "homeworks",
     "name": "作业",
     "icon": "pencil",
-    "details": [{
+    "details": [
+      {
         "id": "1",
         "title": "homework1",
         "src": "homeworks/homework1",
         "desc": "一个H5静态页"
-    }, {
+      },
+      {
         "id": "2",
         "title": "homework2",
         "src": "homeworks/homework2/蓝天白云.html",
         "desc": " CSS作图--蓝天白云"
-    }, {
+      },
+      {
         "id": "3",
         "title": "homework3",
         "src": "homeworks/homework3",
         "desc": "CSS动画--漂浮的白云"
-    }, {
+      },
+      {
         "id": "4",
         "title": "homework4",
         "src": "homeworks/homework4",
         "desc": "javascript基础案例--你的生日是那年的第几天"
-    }, {
+      },
+      {
         "id": "5",
         "title": "homework5",
         "src": "homeworks/homework5",
         "desc": "javascript原生案例--简单的动态轮播图"
-    }, {
+      },
+      {
         "id": "6",
         "title": "homework6",
         "src": "homeworks/homework6",
         "desc": "javascript综合案例--炫酷h5页面作业版"
-    }]
-}, {
+      }
+    ]
+  },
+  {
     "tabId": "4",
     "tabs": "issues",
     "name": "文档",
     "icon": "bookmark",
-    "details": [{
+    "details": [
+      {
         "id": "1",
         "title": "AngularJS 实现单页应用",
         "src": "https://github.com/huangpuyuan/app_angularJS/issues/1",
         "desc": "文章如何做一个完整单页应用"
-    }, {
-
+      },
+      {
         "id": "2",
         "title": "前端前沿 —— Typescript与Angular2",
         "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/3",
         "desc": "2016前端大会中的一些展望"
-    },{
-        "id":"3",
-        "title":"开发移动APP",
-        "src":"https://github.com/huangpuyuan/app_angularJS/issues/2",
-        "desc":"Native APP/Web APP/Hybrid APP"
-
-    }, {
+      },
+      {
+        "id": "3",
+        "title": "使用Angular2",
+        "src": "https://github.com/huangpuyuan/Angular2Action/issues/1",
+        "desc": "用Angular2(4)开发单页应用的注意点"
+      },
+      {
         "id": "4",
+        "title": "开发移动APP",
+        "src": "https://github.com/huangpuyuan/app_angularJS/issues/2",
+        "desc": "Native APP/Web APP/Hybrid APP"
+      },
+      {
+        "id": "5",
         "title": "ElegentJS--Without Loops",
         "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/1",
         "desc": "优雅的JS，使用数组的高级方法"
-    }, {
-        "id": "5",
+      },
+      {
+        "id": "6",
         "title": "CSS实现切角效果",
         "src": "https://github.com/huangpuyuan/myExercises-FrontEnd/issues/2",
         "desc": " CSS作图，CSS揭秘"
-    },{
-        "id": "6",
+      },
+      {
+        "id": "7",
         "title": "RESTful API",
         "src": "https://github.com/huangpuyuan/restfulAPI/issues/1",
         "desc": "api设计 —— 与服务端通讯"
-    }]
-}]
+      }
+    ]
+  }
+]
