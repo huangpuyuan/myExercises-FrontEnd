@@ -22,32 +22,59 @@
         <a href="javascript:;" class="header__nav-item">猿问</a>
         <a href="javascript:;" class="header__nav-item">手记</a>
     </nav>
+    <div class="header__login-area">
+        <a href="#" class="area-btn">
+            <i class="icon-lock"></i>
+        </a>
+        <a href="#" class="area-btn">
+            <i class="icon-alert"></i>
+        </a>
+        <a class="area-btn ">
+            <img class="login-face" src="img/ava.jpg"/>
+        </a>
+    </div>
     <div class="header__search-warp">
-        <div class="search-tags">
-            <a href="javascript:">前端小白</a>
-            <a href="javascript:">PHP基础</a>
-        </div>
         <div class="search-area">
             <input id="search" class="search-input" type="text"/>
                 <label for="search" class="search-label">
                     <i class="search-icon"></i>
                 </label>
+            <div class="search-tags">
+                <a href="javascript:">前端小白</a>
+                <a href="javascript:">PHP基础</a>
+            </div>
         </div>
-    </div>
-    <div class="header__login-area">
-        <a href="#" class="area-btn">
-            <i class="icon"></i>
-        </a>
-        <a href="#" class="area-btn">
-            <i class="icon"></i>
-        </a>
-        <div class="face">
-        </div>
+
+
     </div>
 </header>
-<div class="container">
+<div class="main">
     <div class="banner">
-
+        <div class="banner__header clearfix">
+            <h1>我的购物车</h1>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__title">
+            <div class="card__title-item">
+                <input type="checkbox" />
+                <span class="check__words">全选</span>
+            </div>
+            <div class="card__title-item">
+                <span>商品名称</span>
+            </div>
+            <div class="card__title-item">
+                <span>总价</span>
+            </div>
+            <div class="card__title-item">
+                <span>单价</span>
+            </div>
+        </div>
+        <div class="card__content">
+            <div class="card__content-item"></div>
+            <div class="card__content-item"></div>
+            <div class="card__content-item"></div>
+        </div>
     </div>
 </div>
 <footer>
