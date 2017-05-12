@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 body {
     background: #fff;
     color: #5e5e5e;
@@ -23,7 +22,6 @@ a {
     clear: both;
     visibility: hidden
 }
-
 
 .header {
     width: 100%;
@@ -84,7 +82,6 @@ a {
     float: right;
     margin-right: 18px;
 }
-
 
 .search-tags {
     position: absolute;
@@ -212,7 +209,7 @@ a {
 main
  */
 .banner {
-    height: 160px;
+    height: 140px;
     background-color: #e3e6e9;
     background: url(../img/cart-header-bg.jpg) repeat-x left bottom;
 }
@@ -224,8 +221,10 @@ main
 }
 
 .banner__header > h1 {
+    float: left;
     font-size: 32px;
-    line-height: 115px;
+    height: 80px;
+    line-height: 80px;
     font-weight: 600;
     margin-right: 25px;
     color: #07111b;
@@ -233,11 +232,11 @@ main
 
 .card {
     width: 1104px;
-    padding: 0 36px 48px;
     background-color: #fff;
-    margin-top: -40px;
+    margin-top: -60px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px 10px;
     box-shadow: 0 0 8px rgba(7, 17, 27, 0.2);
     border-radius: 1px;
 }
@@ -266,23 +265,257 @@ main
 }
 
 .card__title-item:nth-of-type(2) {
-    width: 586px;
+    width: 400px;
 }
 
 .card__title-item:nth-of-type(3) {
-    width: 200px;
+    width: 150px;
 }
 
 .card__title-item:nth-of-type(4) {
-    width: 242px;
+    width: 150px;
 }
 
-.card__content{
+.card__title-item:nth-of-type(5) {
+    width: 150px;
+}
+
+.card__title-item:nth-of-type(6) {
+    width: 150px;
+}
+
+.card__content {
     margin-bottom: 16px;
 }
 
-.card__content-item{
-    height: 80px;
-    padding: 20px 0;
+.card__content-checkbox {
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    width: 50px;
+}
+
+.card__content-item {
+    height: 90px;
+    padding: 10px 0;
     border-bottom: 1px solid #d9dde1;
+}
+
+.card__image {
+    float: left !important;
+    width: 160px;
+    height: 90px;
+}
+
+.card__detail-name {
+    display: inline-block;
+    width: 215px;
+    height: 90px;
+    line-height: 90px;
+    padding-left: 30px;
+    color: #07111b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card__total-price,
+.card__unit-price,
+.card__delete {
+    display: inline-block;
+    width: 145px;
+    height: 90px;
+    line-height: 90px;
+    text-indent: 45px;
+}
+
+.card__quantity-form {
+    display: inline-block;
+    width: 120px;
+    padding-left: 30px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 0;
+}
+
+.card__quantity-form > input[type="number"] {
+    font-family: verdana;
+    border: 1px solid #cacbcb;
+    width: 30px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 14px;
+    -moz-appearance: textfield;
+    background-color: white;
+    color: #333;
+}
+
+.card__quantity-form > input::-webkit-outer-spin-button,
+.card__quantity-form > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.card__quantity-form > .decrement,
+.card__quantity-form > .increment {
+    display: inline-block;
+    border: 1px solid #cacbcb;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 2px;
+    width: 16px;
+    text-align: center;
+    color: #666;
+    margin: 0;
+    background: #fff;
+    outline: none;
+    box-sizing: content-box;
+}
+
+.card__quantity-form > .decrement {
+    border-right: 0;
+}
+
+.card__quantity-form > .increment {
+    border-left: 0;
+}
+
+.card__delete-link {
+    color: #5e5e5e;
+}
+
+.card__delete-link:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.account {
+    width: 1104px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px 30px;
+    box-shadow: 0 0 8px rgba(7, 17, 27, 0.2);
+    border-radius: 1px;
+}
+
+.account__btn {
+    transition: transform 1s;
+    display: block;
+    float: right;
+    font-size: 16px;
+    margin-right: 55px;
+    background-color: red;
+    color: #eeeeee;
+    width: 120px;
+    height: 40px;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    outline: none;
+}
+
+.account__btn:hover {
+    transform: translateY(-5px);
+    background-color: crimson;
+    color: #fff;
+}
+
+.account__total {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    float: right;
+}
+
+.account__total-price {
+    display: inline;
+    color: red;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+footer {
+    background: #000000;
+    border-top: 1px solid #e2e4e6;
+    font-size: 12px;
+    color: #787d82;
+    padding: 27px 0;
+    min-width: 620px;
+    margin-top: 60px;
+}
+
+footer .waper {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .followus {
+    margin-right: 34px;
+    padding-left: 30px;
+    float: right;
+}
+
+footer .followus > a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/footer-sprite.png") no-repeat;
+    margin: 3px 3px 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+footer .followus > a:hover {
+    opacity: 1;
+}
+
+footer .followus > .followus-weixin {
+    background-position: 0 -279px;
+}
+
+footer .followus > .followus-weibo {
+    background-position: 0 -321px;
+}
+
+footer .followus > .followus-qzone {
+    background-position: 0 -363px;
+}
+
+footer .footer_intro {
+    padding-left: 40px;
+}
+
+footer .footer_link {
+    margin-bottom: 4px;
+    line-height: 1.8;
+}
+
+footer .footer_link ul {
+    overflow: hidden;
+    margin-top: -1px;
+    list-style: none;
+}
+
+footer .footer_link ul > li {
+    margin-right: 30px;
+    text-align: center;
+    float: left;
+}
+
+footer .footer_link ul > li > a {
+    color: #959aa0;
+}
+
+footer .footer_link ul > li > a:hover {
+    color: #ffffff;
 }

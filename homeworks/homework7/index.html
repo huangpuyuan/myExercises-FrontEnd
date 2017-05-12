@@ -16,7 +16,7 @@
     <nav class="header__nav">
         <a href="javascript:;" class="header__nav-item">课程</a>
         <a href="javascript:;" class="header__nav-item active">职业路径
-                <i class="icon-new"></i>
+            <i class="icon-new"></i>
         </a>
         <a href="javascript:;" class="header__nav-item">实战</a>
         <a href="javascript:;" class="header__nav-item">猿问</a>
@@ -36,9 +36,9 @@
     <div class="header__search-warp">
         <div class="search-area">
             <input id="search" class="search-input" type="text"/>
-                <label for="search" class="search-label">
-                    <i class="search-icon"></i>
-                </label>
+            <label for="search" class="search-label">
+                <i class="search-icon"></i>
+            </label>
             <div class="search-tags">
                 <a href="javascript:">前端小白</a>
                 <a href="javascript:">PHP基础</a>
@@ -57,7 +57,7 @@
     <div class="card">
         <div class="card__title">
             <div class="card__title-item">
-                <input type="checkbox" />
+                <input class="checkbox-all" type="checkbox"/>
                 <span class="check__words">全选</span>
             </div>
             <div class="card__title-item">
@@ -69,17 +69,132 @@
             <div class="card__title-item">
                 <span>单价</span>
             </div>
+            <div class="card__title-item">
+                <span>数量</span>
+            </div>
+            <div class="card__title-item">
+                <span>操作</span>
+            </div>
         </div>
         <div class="card__content">
-            <div class="card__content-item"></div>
-            <div class="card__content-item"></div>
-            <div class="card__content-item"></div>
+            <div class="card__content-item clearfix">
+                <div class="card__content-checkbox">
+                    <input type="checkbox"/>
+                </div>
+                <a href="#" class="">
+                    <img class="card__image" src="./img/g1.jpg" alt="">
+                    <span class="card__detail-name">前端小白成长记</span>
+                </a>
+                <div class="card__total-price">¥<span>369</span></div>
+                <div class="card__unit-price">¥<span>369</span></div>
+                <div class="card__quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input class="quantities" type="number" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                </div>
+                <div class="card__delete">
+                    <a class="card__delete-link" href="javascript:;">删除</a>
+                </div>
+            </div>
+            <div class="card__content-item clearfix">
+                <div class="card__content-checkbox">
+                    <input type="checkbox"/>
+                </div>
+                <a href="#">
+                    <img class="card__image" src="./img/g2.jpg" alt="">
+                    <span class="card__detail-name">前端小白成长记</span>
+                </a>
+                <div class="card__total-price">¥<span>369</span></div>
+                <div class="card__unit-price">¥<span>369</span></div>
+                <div class="card__quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="number" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                </div>
+                <div class="card__delete">
+                    <a class="card__delete-link" href="javascript:;">删除</a>
+                </div>
+            </div>
+            <div class="card__content-item clearfix">
+                <div class="card__content-checkbox">
+                    <input type="checkbox"/>
+                </div>
+                <a href="#" class="card__detail">
+                    <img class="card__image" src="./img/g1.jpg" alt="">
+                    <span class="card__detail-name">前端小白成长记</span>
+                </a>
+                <div class="card__total-price">¥<span>369</span></div>
+                <div class="card__unit-price">¥<span>369</span></div>
+                <div class="card__quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="number" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                </div>
+                <div class="card__delete">
+                    <a class="card__delete-link" href="javascript:;">删除</a>
+                </div>
+            </div>
+            <div class="card__content-item clearfix">
+                <div class="card__content-checkbox">
+                    <input type="checkbox"/>
+                </div>
+                <a href="#">
+                    <img class="card__image" src="./img/g1.jpg" alt="">
+                    <span class="card__detail-name">前端小白成长记</span>
+                </a>
+                <div class="card__total-price">¥<span>369</span></div>
+                <div class="card__unit-price">¥<span>369</span></div>
+                <div class="card__quantity-form">
+                    <a href="javascript:;" class="decrement">-</a>
+                    <input type="number" value="1">
+                    <a href="javascript:;" class="increment">+</a>
+                </div>
+                <div class="card__delete">
+                    <a class="card__delete-link" href="javascript:;">删除</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="account">
+        <button type="button" class="account__btn">去结算</button>
+        <div class="account__total">
+            <span>应付金额:&nbsp;</span>
+            <div class="account__total-price">
+                ¥<span>1476</span>
+            </div>
         </div>
     </div>
 </div>
-<footer>
 
+<footer>
+    <div class="waper">
+        <div class="footer__waper clearfix">
+            <div class="followus">
+                <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                    <div class="flw-weixin-box"></div>
+                </a>
+                <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+            </div>
+            <div class="footer_intro">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
+                        <li><a href="http://www.imooc.com/about/cooperate" target="_blank" title="企业合作">企业合作</a></li>
+                        <li><a href="http://www.imooc.com/about/job" target="_blank">人才招聘</a></li>
+                        <li><a href="http://www.imooc.com/about/contact" target="_blank">联系我们</a></li>
+                        <li><a href="http://www.imooc.com/about/recruit" target="_blank">讲师招募</a></li>
+                        <li><a href="http://class.imooc.com/user/faq" target="_blank">常见问题</a></li>
+                        <li><a href="http://class.imooc.com/user/feedback" target="_blank">意见反馈</a></li>
+                        <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                        <li><a href="http://www.imooc.com/about/friendly" target="_blank">友情链接</a></li>
+                    </ul>
+                </div>
+                <p>Copyright © 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+            </div>
+        </div>
+    </div>
 </footer>
-<script></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
