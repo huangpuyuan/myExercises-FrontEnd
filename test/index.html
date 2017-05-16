@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="button" value="1" id="btn">
+<script>
+    //    function fn(num1, num2) {
+    //        arguments[0] = 3;
+    //        num1 = -num1;
+    //        num2 = num1 * num2;
+    //        console.log(arguments[0], arguments[1])
+    //
+    //    }
+
+    console.log(undefined == null, undefined === null);
+
+    document.getElementById('btn').onclick = function () {
+        console.log(this.value);
+        document.close();
+    };
+
+    document.getElementById('btn').onclick.call(window);
+    //
+    //    var a = 1;
+    //    function fn() {
+    //        console.log('a', a);
+    //        a = 3
+    //    }
+    //    fn();
+    //    console.log('a2', a);
+
+    //    function add() {
+    //        return a + b;
+    //    }
+    //    function fn(fn) {
+    //        fn.person = 'xm';
+    //        fn = function () {
+    //        };
+    //        fn.person = 'xh';
+    //    }
+    //    fn(add);
+    //    console.log(add.person);
+
+
+    function count() {
+        var num = 1;
+        return function () {
+            return num++;
+        }
+    }
+
+
+    console.log(count()());
+    console.log(count()());
+    console.log(count()());
+    var fn2 = count();
+
+    console.log(fn2());
+    console.log(fn2());
+    console.log(fn2());
+
+    //
+    //    function a(x) {
+    //        return x * a(x - 1);
+    //    }
+    //    console.log(a(5));
+    //
+
+    console.log(fn1);
+    function fn1() {
+
+//}
+//
+//
+
+
+
+</script>
+</body>
+</html>

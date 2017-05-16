@@ -223,8 +223,8 @@ main
 .banner__header > h1 {
     float: left;
     font-size: 32px;
-    height: 80px;
-    line-height: 80px;
+    height: 90px;
+    line-height: 90px;
     font-weight: 600;
     margin-right: 25px;
     color: #07111b;
@@ -233,7 +233,7 @@ main
 .card {
     width: 1104px;
     background-color: #fff;
-    margin-top: -60px;
+    margin-top: -40px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 30px 10px;
@@ -447,7 +447,7 @@ footer {
     color: #787d82;
     padding: 27px 0;
     min-width: 620px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 footer .waper {
