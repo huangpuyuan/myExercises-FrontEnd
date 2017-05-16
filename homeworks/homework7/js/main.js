@@ -1,4 +1,5 @@
-;(function() {
+;
+(function() {
     "use strict";
     var wrapElem = document.querySelector(".card");
     /**
@@ -21,11 +22,30 @@
      * 封装遍历的方法
      * @param array
      * @param fn
+     * @当返回 "break" 时中断循环
      */
 
     function each(array, fn) {
         for (var i = 0; i < array.length; i++) {
-            fn(i, array[i]);
+            var r = fn(i, array[i]);
+            if (r === "break") {
+                break;
+            }
+            // else(r === "continue"){
+            //     continue;
+            // }
+        }
+    }
+
+    /**
+    *验证input,只能输入正整数
+    */
+
+    function inputMustBePostiveInt() {
+        if (this.value.length == 1) {
+            this.value = this.value.replace(/[^1-9]/g, '')
+        } else {
+            this.value = this.value.replace(/\D/g, '')
         }
     }
 
@@ -33,17 +53,25 @@
      * 数量递增和递减事件失去焦点事件和监听键盘回车事件
      */
     each(calculatorElem.number, function(index, elem) {
+
+        //文本框内容只能为正整数
+        elem.onkeyup = function() {
+            inputMustBePostiveInt.call(this);
+        }
+
         elem.onblur = function() {
             commonOperations(index);
         }
+
         elem.onkeydown = function(e) {
             //如果window.event对象存在，就以此事件对象为准 
-            if (window.event) e = window.event;
+            if (window.event) { e = window.event };
             var code = e.charCode || e.keyCode;
             if (code == 13) {
                 commonOperations(index);
             }
         }
+
     });
 
 
@@ -72,12 +100,13 @@
     each(calculatorElem.checkBox, function(index, elem) {
         elem.onclick = function() {
             outputTotalResult();
+            unselectedAllElem();
         }
     });
-    /**绑定全选事件
+    /**绑定全选事件,默认全选事件执行
      *
      * @type {selectedAllElem}
-     *默认全选事情执行
+     *
      */
 
     calculatorElem.checkBoxAll.onclick = selectedAllElem;
@@ -104,7 +133,7 @@
     }
 
     /**
-     * 应付余额汇总
+     * 应付余额汇总  用数组进行传参 调用apply方法
      */
     function outputTotalResult() {
         var prices = [];
@@ -147,7 +176,36 @@
     }
 
     /**
-     * 全选和反选
+     * 判断是否为正整数
+     */
+    // function isPostiveInteger(value) {
+    //     if (Number.isInteger(value) && value > 0) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+
+    /**
+     * 如果只有一个多选框未选中则全选框未选中
+     * 未全选中的方法
+     */
+    function unselectedAllElem() {
+        each(calculatorElem.checkBox, function(index, elem) {
+            if (isSelected(elem)) {
+                calculatorElem.checkBoxAll.checked = true;
+                calculatorElem.checkWords.innerHTML = '清空';
+            } else {
+                calculatorElem.checkBoxAll.checked = false;
+                calculatorElem.checkWords.innerHTML = '全选';
+                return "break";
+            }
+        });
+    }
+
+    /**
+     * 全选和清空
      */
     function selectedAllElem() {
         each(calculatorElem.checkBox, function(index, elem) {
